@@ -175,6 +175,69 @@
     
     
     <article
+  id="post-LeetCode刷题"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/09/06/LeetCode%E5%88%B7%E9%A2%98/"
+    >LeetCode刷题</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/09/06/LeetCode%E5%88%B7%E9%A2%98/" class="article-date">
+  <time datetime="2022-09-06T13:50:00.000Z" itemprop="datePublished">2022-09-06</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p><strong>LeetCode刷题记录</strong></p>
+<h1 id="贪心算法"><a href="#贪心算法" class="headerlink" title="贪心算法"></a>贪心算法</h1><h2 id="435——无重叠区间"><a href="#435——无重叠区间" class="headerlink" title="435——无重叠区间"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/non-overlapping-intervals/">435——无重叠区间</a></h2><blockquote>
+<p>2022-08-014</p>
+</blockquote>
+<p><strong>方法1.动态规划</strong></p>
+<ul>
+<li><p>思路: dp[i]表示前i个区间中最大不重合区间的个数，首先将区间数组按左边界排序，找出intervals中最多有多少个不重复的区间，动态规划方程dp[i] &#x3D; Math.max(dp[i]，dp[j] + 1)。intervals的长度减去最多的不重复的区间就是最少删除区间的个数</p>
+</li>
+<li><p>复杂度:时间复杂度0(n^2)，两层嵌套循环leetcode执行超时复杂度过高。空间复杂度0(n), dp数组的空间</p>
+<p><strong>javascript</strong></p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//leetcode执行超时 复杂度过高</span></span><br><span class="line"><span class="keyword">var</span> eraseOverlapIntervals = <span class="keyword">function</span> (<span class="params">intervals</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (!intervals.<span class="property">length</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    intervals.<span class="title function_">sort</span>(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a[<span class="number">0</span>] - b[<span class="number">0</span>]); <span class="comment">//按左边界排序</span></span><br><span class="line">    <span class="keyword">const</span> n = intervals.<span class="property">length</span>;</span><br><span class="line">    <span class="keyword">const</span> dp = <span class="keyword">new</span> <span class="title class_">Array</span>(n).<span class="title function_">fill</span>(<span class="number">1</span>); <span class="comment">//初始化dp数组</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">0</span>; j &lt; i; j++) &#123;</span><br><span class="line">            <span class="comment">//循环i,j找出intervals中最多有多少个不重复的区间</span></span><br><span class="line">            <span class="comment">//j的右边界小于i的左边界 相当于多出了一个不重合区间</span></span><br><span class="line">            <span class="keyword">if</span> (intervals[j][<span class="number">1</span>] &lt;= intervals[i][<span class="number">0</span>]) &#123;</span><br><span class="line">                dp[i] = <span class="title class_">Math</span>.<span class="title function_">max</span>(dp[i], dp[j] + <span class="number">1</span>); <span class="comment">//更新dp[i]</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> n - <span class="title class_">Math</span>.<span class="title function_">max</span>(...dp); <span class="comment">//n减去最多的不重复的区间 就是最少删除区间的个数</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure> 
+      <a class="article-more-link" href="/2022/09/06/LeetCode%E5%88%B7%E9%A2%98/"
+        >阅读更多...</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
   id="post-前端笔记"
   class="article article-type-post"
   itemscope

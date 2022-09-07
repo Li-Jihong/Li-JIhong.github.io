@@ -184,35 +184,29 @@
   data-scroll-reveal
 >
   <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/09/06/LeetCode%E5%88%B7%E9%A2%98/"
-    >LeetCode刷题</a> 
-</h2>
- 
-
-      
-    </header>
      
     <div class="article-meta">
       <a href="/2022/09/06/LeetCode%E5%88%B7%E9%A2%98/" class="article-date">
-  <time datetime="2022-09-06T13:50:00.000Z" itemprop="datePublished">2022-09-06</time>
+  <time datetime="2022-09-06T13:50:51.159Z" itemprop="datePublished">2022-09-06</time>
 </a>    
     </div>
       
     <div class="article-entry" itemprop="articleBody">
        
-  <p><strong>LeetCode刷题记录</strong></p>
-<h1 id="贪心算法"><a href="#贪心算法" class="headerlink" title="贪心算法"></a>贪心算法</h1><h2 id="435——无重叠区间"><a href="#435——无重叠区间" class="headerlink" title="435——无重叠区间"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/non-overlapping-intervals/">435——无重叠区间</a></h2><blockquote>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: LeetCode刷题</span><br><span class="line">author: Li Jihong</span><br><span class="line">categories:</span><br><span class="line">- [刷题]</span><br><span class="line">tags:</span><br><span class="line">- leetcode</span><br></pre></td></tr></table></figure>
+<p><strong>LeetCode刷题记录</strong></p>
+<h1>贪心算法</h1>
+<h2 id="435-无重叠区间"><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/non-overlapping-intervals/">435——无重叠区间</a></h2>
+<blockquote>
 <p>2022-08-014</p>
 </blockquote>
 <p><strong>方法1.动态规划</strong></p>
 <ul>
-<li><p>思路: dp[i]表示前i个区间中最大不重合区间的个数，首先将区间数组按左边界排序，找出intervals中最多有多少个不重复的区间，动态规划方程dp[i] &#x3D; Math.max(dp[i]，dp[j] + 1)。intervals的长度减去最多的不重复的区间就是最少删除区间的个数</p>
+<li>
+<p>思路: dp[i]表示前i个区间中最大不重合区间的个数，首先将区间数组按左边界排序，找出intervals中最多有多少个不重复的区间，动态规划方程dp[i] = Math.max(dp[i]，dp[j] + 1)。intervals的长度减去最多的不重复的区间就是最少删除区间的个数</p>
 </li>
-<li><p>复杂度:时间复杂度0(n^2)，两层嵌套循环leetcode执行超时复杂度过高。空间复杂度0(n), dp数组的空间</p>
+<li>
+<p>复杂度:时间复杂度0(n^2)，两层嵌套循环leetcode执行超时复杂度过高。空间复杂度0(n), dp数组的空间</p>
 <p><strong>javascript</strong></p>
 </li>
 </ul>

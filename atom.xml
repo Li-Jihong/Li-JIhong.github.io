@@ -63,9 +63,10 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;前端笔记&quot;&gt;&lt;a href=&quot;#前端笔记&quot; class=&quot;headerlink&quot; title=&quot;前端笔记&quot;&gt;&lt;/a&gt;前端笔记&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;字体图标-Iconfont&lt;/strong&gt;&lt;/p&gt;
+    <summary type="html">&lt;h1&gt;前端笔记&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;字体图标-Iconfont&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;引用字体图标样式表&lt;/p&gt;
-&lt;figure</summary>
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
         
       
     

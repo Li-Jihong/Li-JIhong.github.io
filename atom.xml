@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-07T06:52:25.850Z</updated>
+  <updated>2022-09-07T13:35:56.774Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PTA-天梯赛——L1-011 A-B</title>
+    <link href="http://example.com/2022/09/07/PTA-%E5%A4%A9%E6%A2%AF%E8%B5%9B%E2%80%94%E2%80%94L1-011-A-B/"/>
+    <id>http://example.com/2022/09/07/PTA-%E5%A4%A9%E6%A2%AF%E8%B5%9B%E2%80%94%E2%80%94L1-011-A-B/</id>
+    <published>2022-09-07T13:34:00.000Z</published>
+    <updated>2022-09-07T13:35:56.774Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://pintia.cn/problem-sets/994805046380707840/problems/994805130426171392&quot;&gt;PTA-天梯赛——L1-011 A-B&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本题要求你计算A−B。不过麻烦的是，A和B都是字符串 —— 即从字符串A中把字符串B所包含的字符全删掉，剩下的字符组成的就是字符串A−B。&lt;/p&gt;
+&lt;h6 id=&quot;输入格式：&quot;&gt;输入格式：&lt;/h6&gt;
+&lt;p&gt;输入在2行中先后给出字符串A和B。两字符串的长度都不超过10e4 ，并且保证每个字符串都是由可见的ASCII码和空白字符组成，最后以换行符结束。&lt;/p&gt;
+&lt;h6 id=&quot;输出格式：&quot;&gt;输出格式：&lt;/h6&gt;
+&lt;p&gt;在一行中打印出A−B的结果字符串。&lt;/p&gt;
+&lt;h6 id=&quot;输入样例：&quot;&gt;输入样例：&lt;/h6&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;I love GPLT!  It&amp;#x27;s a fun game!&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;aeiou&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h6 id=&quot;输出样例：&quot;&gt;输出样例：&lt;/h6&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;I lv GPLT!  It&amp;#x27;s  fn gm!&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    
+    <category term="天梯赛" scheme="http://example.com/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode刷题</title>

@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-07T13:41:42.029Z</updated>
+  <updated>2022-09-08T00:09:27.887Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2022/09/07/PTA-%E5%A4%A9%E6%A2%AF%E8%B5%9B%E2%80%94%E2%80%94L1-011-A-B/"/>
     <id>http://example.com/2022/09/07/PTA-%E5%A4%A9%E6%A2%AF%E8%B5%9B%E2%80%94%E2%80%94L1-011-A-B/</id>
     <published>2022-09-07T13:40:00.000Z</published>
-    <updated>2022-09-07T13:41:42.029Z</updated>
+    <updated>2022-09-08T00:09:27.887Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://pintia.cn/problem-sets/994805046380707840/problems/994805130426171392&quot;&gt;PTA-天梯赛——L1-011 A-B&lt;/a&gt;&lt;/p&gt;
@@ -41,6 +41,8 @@
     
     
     <category term="天梯赛" scheme="http://example.com/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
     
   </entry>
   

@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2022/09/08/%E6%97%A9%E7%9F%A5%E9%81%93%E6%9A%91%E5%81%87%E4%B8%8D%E7%95%99%E6%A0%A1%E4%BA%86/</loc>
+    
+    <lastmod>2022-09-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/2022/09/08/PTA-%E5%A4%A9%E6%A2%AF%E8%B5%9B%E2%80%94%E2%80%94L1-016-%E6%9F%A5%E9%AA%8C%E8%BA%AB%E4%BB%BD%E8%AF%81/</loc>
     
     <lastmod>2022-09-08</lastmod>
@@ -169,6 +178,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>http://example.com/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2022-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -187,6 +203,13 @@
   
   <url>
     <loc>http://example.com/categories/%E5%88%B7%E9%A2%98/PTA/</loc>
+    <lastmod>2022-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/%E6%9D%8E%E5%AD%A3%E9%B8%BF%E7%9A%84%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2022-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

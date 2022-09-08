@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-08T13:23:00.048Z</updated>
+  <updated>2022-09-08T13:57:34.874Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PTA-天梯赛——L1-016 查验身份证</title>
+    <link href="http://example.com/2022/09/08/PTA-%E5%A4%A9%E6%A2%AF%E8%B5%9B%E2%80%94%E2%80%94L1-016-%E6%9F%A5%E9%AA%8C%E8%BA%AB%E4%BB%BD%E8%AF%81/"/>
+    <id>http://example.com/2022/09/08/PTA-%E5%A4%A9%E6%A2%AF%E8%B5%9B%E2%80%94%E2%80%94L1-016-%E6%9F%A5%E9%AA%8C%E8%BA%AB%E4%BB%BD%E8%AF%81/</id>
+    <published>2022-09-08T13:51:00.000Z</published>
+    <updated>2022-09-08T13:57:34.874Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://pintia.cn/problem-sets/994805046380707840/problems/994805122985476096&quot;&gt;PTA-天梯赛——L1-016 查验身份证&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一个合法的身份证号码由17位地区、日期编号和顺序编号加1位校验码组成。校验码的计算规则如下：&lt;/p&gt;
+&lt;p&gt;首先对前17位数字加权求和，权重分配为：{7，9，10，5，8，4，2，1，6，3，7，9，10，5，8，4，2}；然后将计算的和对11取模得到值Z；最后按照以下关系对应Z值与校验码M的值：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Z：0 1 2 3 4 5 6 7 8 9 10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;M：1 0 X 9 8 7 6 5 4 3 2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;现在给定一些身份证号码，请你验证校验码的有效性，并输出有问题的号码。&lt;/p&gt;
+&lt;h6 id=&quot;输入格式：&quot;&gt;输入格式：&lt;/h6&gt;
+&lt;p&gt;输入第一行给出正整数N（≤100）是输入的身份证号码的个数。随后N行，每行给出1个18位身份证号码。&lt;/p&gt;
+&lt;h6 id=&quot;输出格式：&quot;&gt;输出格式：&lt;/h6&gt;
+&lt;p&gt;按照输入的顺序每行输出1个有问题的身份证号码。这里并不检验前17位是否合理，只检查前17位是否全为数字且最后1位校验码计算准确。如果所有号码都正常，则输出All passed。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="刷题" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+    <category term="PTA" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/PTA/"/>
+    
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
+    
+    <category term="天梯赛" scheme="http://example.com/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>PTA-天梯赛——L1-015 跟奥巴马一起画方块</title>

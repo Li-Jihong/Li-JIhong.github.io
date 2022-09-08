@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-08T00:09:27.887Z</updated>
+  <updated>2022-09-08T07:05:44.807Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++ STL库中map的常见操作</title>
+    <link href="http://example.com/2022/09/08/C-STL%E5%BA%93%E4%B8%ADmap%E7%9A%84%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/"/>
+    <id>http://example.com/2022/09/08/C-STL%E5%BA%93%E4%B8%ADmap%E7%9A%84%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/</id>
+    <published>2022-09-08T06:42:00.000Z</published>
+    <updated>2022-09-08T07:05:44.807Z</updated>
+    
+    
+    <summary type="html">&lt;h6 id=&quot;头文件：&quot;&gt;头文件：&lt;/h6&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&amp;lt;map&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;namespace&lt;/span&gt; std;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h6 id=&quot;定义：&quot;&gt;定义：&lt;/h6&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;map&amp;lt;&lt;span class=&quot;type&quot;&gt;char&lt;/span&gt;,&lt;span class=&quot;type&quot;&gt;int&lt;/span&gt;&amp;gt;m;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//char是下面中括号中元素的数据类型（当然可以换成其他的），&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//int是等号右边的元素的数据类型。定义什么样的类型是随便的，现在听着可能有点迷，看了下面的赋值可能就懂了&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;I love GPLT!  It&amp;#x27;s a fun game!&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;aeiou&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="语法" scheme="http://example.com/categories/%E8%AF%AD%E6%B3%95/"/>
+    
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
+    
+    <category term="STL" scheme="http://example.com/tags/STL/"/>
+    
+    <category term="map" scheme="http://example.com/tags/map/"/>
+    
+  </entry>
   
   <entry>
     <title>PTA-天梯赛——L1-011 A-B</title>

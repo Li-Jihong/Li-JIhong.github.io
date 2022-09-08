@@ -137,6 +137,13 @@
 
   
   <url>
+    <loc>http://example.com/tags/leetcode/</loc>
+    <lastmod>2022-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/tags/C/</loc>
     <lastmod>2022-09-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -152,13 +159,6 @@
   
   <url>
     <loc>http://example.com/tags/map/</loc>
-    <lastmod>2022-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/leetcode/</loc>
     <lastmod>2022-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -188,14 +188,14 @@
 
   
   <url>
-    <loc>http://example.com/categories/%E8%AF%AD%E6%B3%95/</loc>
+    <loc>http://example.com/categories/%E5%88%B7%E9%A2%98/</loc>
     <lastmod>2022-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E5%88%B7%E9%A2%98/</loc>
+    <loc>http://example.com/categories/%E8%AF%AD%E6%B3%95/</loc>
     <lastmod>2022-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

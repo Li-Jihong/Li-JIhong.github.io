@@ -172,14 +172,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <loc>http://example.com/tags/java/</loc>
     <lastmod>2022-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/java/</loc>
+    <loc>http://example.com/tags/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2022-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -202,14 +202,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E6%9D%8E%E5%AD%A3%E9%B8%BF%E7%9A%84%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/</loc>
+    <loc>http://example.com/categories/%E5%88%B7%E9%A2%98/PTA/</loc>
     <lastmod>2022-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E5%88%B7%E9%A2%98/PTA/</loc>
+    <loc>http://example.com/categories/%E6%9D%8E%E5%AD%A3%E9%B8%BF%E7%9A%84%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2022-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

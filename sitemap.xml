@@ -165,14 +165,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/java/</loc>
+    <loc>http://example.com/tags/leetcode/</loc>
     <lastmod>2022-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/leetcode/</loc>
+    <loc>http://example.com/tags/java/</loc>
     <lastmod>2022-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-11T03:49:39.246Z</updated>
+  <updated>2022-09-11T05:59:24.154Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2022/09/11/%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B9%8B%E2%80%94%E2%80%94%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
     <id>http://example.com/2022/09/11/%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B9%8B%E2%80%94%E2%80%94%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</id>
     <published>2022-09-11T03:40:00.000Z</published>
-    <updated>2022-09-11T03:49:39.246Z</updated>
+    <updated>2022-09-11T05:59:24.154Z</updated>
     
     
       
@@ -29,7 +29,9 @@
         
         
     <summary type="html">&lt;h6 id=&quot;背景&quot;&gt;背景&lt;/h6&gt;
-&lt;img src=&quot;/images/image-20220911114410844.png&quot; alt=&quot;隐身背景&quot;</summary>
+&lt;img src=&quot;/images/image-20220911114410844.png&quot; alt=&quot;引申背景&quot; style=&quot;zoom:40%;&quot;&gt;
+&gt; 是否可能进─步减少训练参数数量?
+&gt;</summary>
         
       
     

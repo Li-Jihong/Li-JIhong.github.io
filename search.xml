@@ -4,7 +4,109 @@
     <title>深度学习之——卷积神经网络</title>
     <url>/2022/09/11/%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B9%8B%E2%80%94%E2%80%94%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</url>
     <content><![CDATA[<h6 id="背景">背景</h6>
-<img src="/images/image-20220911114410844.png" alt="隐身背景" style="zoom:40%;">
+<img src="/images/image-20220911114410844.png" alt="引申背景" style="zoom:40%;">
+> 是否可能进─步减少训练参数数量?
+> 办法:提取出图像中的关键信息(轮廓)，再建立MLP模型进行训练
+<h6 id="图像卷积运算">图像卷积运算</h6>
+<blockquote>
+<p>对图像矩阵与滤波器矩阵进行对应相乘再求和运算，转化得到新的矩阵,作用:<strong>快速定位图像中某些边缘特征</strong><br>
+英文: convolution  —&gt; CNN</p>
+</blockquote>
+<p>A与B的卷积通常表示为:  A * B或convolution(A,B)<br>
+<img src="/images/image-20220911121624085.png" alt="运算规则" style="zoom:33%;"><br>
+<img src="/images/image-20220911122142445.png" alt="转换后" style="zoom:33%;"></p>
+<h6 id="寻找竖向轮廓">寻找竖向轮廓</h6>
+<img src="/images/image-20220911122445784.png" alt="转换后" style="zoom:33%;">
+> 结论：包含竖向轮廓的区域非常亮（灰度值高)
+###### 寻找竖向轮廓
+<img src="/images/image-20220911122733403.png" alt="转换后" style="zoom:33%;">
+<blockquote>
+<p>结论：将图片与轮廓滤波器进行卷积运算,可快速定位固定轮廓特征的位置</p>
+</blockquote>
+<img src="/images/image-20220911122938543.png" alt="转换后" style="zoom:33%;">
+> 结论：一个过滤器不够，需要寻找很多过滤器
+<img src="/images/image-20220911123154171.png" alt="转换后" style="zoom:33%;">
+<h6 id="池化层实现维度缩减">池化层实现维度缩减</h6>
+<blockquote>
+<p>池化:按照一个固定规则对图像矩阵进行处理,将其转换为更低维度的矩阵</p>
+</blockquote>
+<h6 id="最大法池化-max-pooling-常用">最大法池化(Max-pooling)（常用）</h6>
+<blockquote>
+<p>保留核心信息的情况下，实现维度缩减</p>
+</blockquote>
+<img src="/images/image-20220911123436374.png" alt="转换后" style="zoom:33%;">
+<p>平均法池化(Avg-pooling)（取平均值）</p>
+<h6 id="卷积神经网络">卷积神经网络</h6>
+<blockquote>
+<p>把卷积、池化、mlp先后连接在一起，组成卷积神经网络。</p>
+</blockquote>
+<img src="/images/image-20220911124154268.png" alt="转换后" style="zoom:33%;">
+###### 卷积神经网络两大特点
+<ol>
+<li>参数共享(parameter sharing): 同一个特征过滤器可用于整张图片</li>
+<li>稀疏连接（sparsity of connections): 生成的特征图片每个节点只与原图片中特定节点连接 =&gt; 将特征区域化，减小误差</li>
+</ol>
+<img src="/images/image-20220911124431218.png" alt="转换后" style="zoom:33%;">
+<hr>
+<h6 id="卷积运算导致的两个问题">卷积运算导致的两个问题</h6>
+<ol>
+<li>图像被压缩，造成信息丢失</li>
+<li>边缘信息使用少，容易被忽略</li>
+</ol>
+<img src="/images/image-20220911125159146.png" alt="转换后" style="zoom:33%;">
+通过padding增加像素的数量，由过滤器尺stride决定
+<img src="/images/image-20220911132254701.png" alt="转换后" style="zoom:33%;">
+###### 有效解决方法：图像填充（padding）
+<blockquote>
+<p>通过在图像各边增加像素，使其在进行卷积运算维持原图大小</p>
+</blockquote>
+<img src="/images/image-20220911125159146.png" alt="转换后" style="zoom:33%;">
+<p>通过padding增加像素的数量，由过滤器尺stride决定</p>
+<img src="/images/image-20220911132254701.png" alt="转换后" style="zoom:33%;">
+<h6 id="经典的cnn模型">经典的CNN模型</h6>
+<ol>
+<li>LeNet-5</li>
+<li>AlexNet</li>
+<li>VGG</li>
+</ol>
+<blockquote>
+<p>参考经典的CNN结构搭建新模型<br>
+使用经典的CNN模型结构对图像预处理，再建立MLP模型</p>
+</blockquote>
+<h6 id="lenet-5">LeNet-5</h6>
+<img src="/images/image-20220911132841327.png" alt="转换后" style="zoom:33%;">
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf</span><br></pre></td></tr></table></figure>
+<h6 id="alexnet">AlexNet</h6>
+<img src="/images/image-20220911133208675.png" alt="转换后" style="zoom:33%;">
+<p>AlexNet论文：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>输入图像: 227X 227X 3RGB图，3个通道</p>
+<p>训练参数:约60,000,000个</p>
+<p>特点:</p>
+<p>1、适用于识别较为复杂的彩色图，可识别1000种类别<br>
+2、结构比LeNet更为复杂，使用Relu作为激活函数</p>
+</blockquote>
+<p>AlexNet的出现使得：</p>
+<blockquote>
+<p>学术界开始相信深度学习技术,<br>
+在计算机视觉立用中可以得到很不错的结果。</p>
+</blockquote>
+<h6 id="vgg-16">VGG-16</h6>
+<img src="/images/image-20220911133838642.png" alt="转换后" style="zoom:33%;">
+<p>VGG-16论文：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://arxiv.org/pdf/1409.1556.pdf</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>输入图像:227 X 227X 3 RGB图，3个通道</p>
+<p>训练参数:约138,000,000个</p>
+<p>特点:</p>
+<p>1、所有卷积层tilter 宽和高都是3、步长为1，padding都使用same convolution;<br>
+2、所有池化层的 filtey宽和高都是况，步长都是2;<br>
+3、相比alexnet，有更多的filter用于提取轮廓信息，具有更高精准性</p>
+</blockquote>
+<img src="/images/image-20220911134438302.png" alt="转换后" style="zoom:33%;">
+<img src="/images/image-20220911134500337.png" alt="转换后" style="zoom:33%;">
+<hr>
 ]]></content>
       <categories>
         <category>人工智能</category>

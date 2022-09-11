@@ -15,6 +15,7 @@
 <p>A与B的卷积通常表示为:  A * B或convolution(A,B)<br>
 <img src="/images/image-20220911121624085.png" alt="运算规则" style="zoom:33%;"><br>
 <img src="/images/image-20220911122142445.png" alt="转换后" style="zoom:33%;"></p>
+<span id="more"></span>
 <h6 id="寻找竖向轮廓">寻找竖向轮廓</h6>
 <img src="/images/image-20220911122445784.png" alt="转换后" style="zoom:33%;">
 > 结论：包含竖向轮廓的区域非常亮（灰度值高)

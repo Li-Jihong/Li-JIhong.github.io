@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-12T13:33:32.947Z</updated>
+  <updated>2022-09-12T14:14:09.146Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我写了一首诗</title>
+    <link href="http://example.com/2022/09/12/%E6%88%91%E5%86%99%E4%BA%86%E4%B8%80%E9%A6%96%E8%AF%97/"/>
+    <id>http://example.com/2022/09/12/%E6%88%91%E5%86%99%E4%BA%86%E4%B8%80%E9%A6%96%E8%AF%97/</id>
+    <published>2022-09-12T13:34:00.000Z</published>
+    <updated>2022-09-12T14:14:09.146Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;没有大结局的故事值得品味吗?&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="李季鸿的日常随笔" scheme="http://example.com/categories/%E6%9D%8E%E5%AD%A3%E9%B8%BF%E7%9A%84%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="随笔" scheme="http://example.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>如果再来一次,,,,,,,,,,,,,哪有如果啊</title>

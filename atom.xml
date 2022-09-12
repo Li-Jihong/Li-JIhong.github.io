@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-11T06:02:11.167Z</updated>
+  <updated>2022-09-12T13:32:36.499Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如果再来一次,,,,,,,,,,,,,哪有如果啊</title>
+    <link href="http://example.com/2022/09/11/%E6%97%A5%E5%B8%B8%E6%84%9F%E6%82%9F/"/>
+    <id>http://example.com/2022/09/11/%E6%97%A5%E5%B8%B8%E6%84%9F%E6%82%9F/</id>
+    <published>2022-09-11T08:21:00.000Z</published>
+    <updated>2022-09-12T13:32:36.499Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;如果再来一次，，，去他妈的异地恋&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;音乐真的可以表达心情，睡不着的每个夜全靠以前的每个律动进行催眠&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果再来一次，我可能会选择不遇见你。&lt;/p&gt;
+&lt;p&gt;如果再来一次，我可能尽量不和你接触，不说话，平平淡淡的相逢可能也会比现在的结局好看。&lt;/p&gt;
+&lt;p&gt;如果再来一次，我可能变得开朗，至少不像现在那么迷茫。&lt;/p&gt;
+&lt;p&gt;如果再来一次，我可能会选择远远观赏，而不是放大缺点，人的成长总是悄无声息的，而我却失去了耐心去等待。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="李季鸿的日常随笔" scheme="http://example.com/categories/%E6%9D%8E%E5%AD%A3%E9%B8%BF%E7%9A%84%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="随笔" scheme="http://example.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>深度学习之——卷积神经网络</title>

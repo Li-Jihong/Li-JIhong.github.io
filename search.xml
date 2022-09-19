@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>L1-018 大笨钟</title>
+    <url>/2022/09/19/L1-018-%E5%A4%A7%E7%AC%A8%E9%92%9F/</url>
+    <content><![CDATA[<p><a href="https://pintia.cn/problem-sets/994805046380707840/problems/994805119944605696">PTA-天梯赛——L1-018 大笨钟</a></p>
+<p>微博上有个自称“大笨钟V”的家伙，每天敲钟催促码农们爱惜身体早点睡觉。不过由于笨钟自己作息也不是很规律，所以敲钟并不定时。一般敲钟的点数是根据敲钟时间而定的，如果正好在某个整点敲，那么“当”数就等于那个整点数；如果过了整点，就敲下一个整点数。另外，虽然一天有24小时，钟却是只在后半天敲1~12下。例如在23:00敲钟，就是“当当当当当当当当当当当”，而到了23:01就会是“当当当当当当当当当当当当”。在午夜00:00到中午12:00期间（端点时间包括在内），笨钟是不敲的。</p>
+<p>下面就请你写个程序，根据当前时间替大笨钟敲钟。</p>
+<h6 id="输入格式：">输入格式：</h6>
+<p>输入第一行按照hh:mm的格式给出当前时间。其中hh是小时，在00到23之间；mm是分钟，在00到59之间。</p>
+<h6 id="输出格式：">输出格式：</h6>
+<p>根据当前时间替大笨钟敲钟，即在一行中输出相应数量个Dang。如果不是敲钟期，则输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Only hh:mm.  Too early to Dang.</span><br></pre></td></tr></table></figure>
+<p>其中hh:mm是输入的时间。</p>
+<span id="more"></span>
+<h6 id="输入样例1：">输入样例1：</h6>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">19:05</span><br></pre></td></tr></table></figure>
+<h6 id="输出样例1：">输出样例1：</h6>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DangDangDangDangDangDangDangDang</span><br></pre></td></tr></table></figure>
+<h6 id="输入样例2：">输入样例2：</h6>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">07:05</span><br></pre></td></tr></table></figure>
+<h6 id="输出样例2：">输出样例2：</h6>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Only 07:05.  Too early to Dang.</span><br></pre></td></tr></table></figure>
+<h6 id="我的解法-十分通俗易懂">我的解法（十分通俗易懂）</h6>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> hh,mm;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d:%d&quot;</span>,&amp;hh,&amp;mm);</span><br><span class="line">    <span class="keyword">if</span>(hh&lt;<span class="number">12</span>||(hh==<span class="number">12</span>&amp;&amp;mm==<span class="number">0</span>))<span class="comment">//小于12时或者恰好等于12时都是不dang</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Only %02d:%02d.  Too early to Dang.&quot;</span>,hh,mm);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> n=hh<span class="number">-12</span>;</span><br><span class="line">        <span class="keyword">if</span>(mm&gt;<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            n++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;Dang&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>刷题</category>
+        <category>PTA</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>天梯赛</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>L1-017 到底有多二</title>
+    <url>/2022/09/19/L1-017-%E5%88%B0%E5%BA%95%E6%9C%89%E5%A4%9A%E4%BA%8C/</url>
+    <content><![CDATA[<p><a href="https://pintia.cn/problem-sets/994805046380707840/problems/994805121500692480">PTA-天梯赛——L1-017 到底有多二</a></p>
+<p>一个整数“犯二的程度”定义为该数字中包含2的个数与其位数的比值。如果这个数是负数，则程度增加0.5倍；如果还是个偶数，则再增加1倍。例如数字-13142223336是个11位数，其中有3个2，并且是负数，也是偶数，则它的犯二程度计算为：3/11×1.5×2×100%，约为81.82%。本题就请你计算一个给定整数到底有多二。</p>
+<h6 id="输入格式：">输入格式：</h6>
+<p>输入第一行给出一个不超过50位的整数N。</p>
+<h6 id="输出格式：">输出格式：</h6>
+<p>在一行中输出N犯二的程度，保留小数点后两位。</p>
+<span id="more"></span>
+<h6 id="输入样例：">输入样例：</h6>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-13142223336</span><br></pre></td></tr></table></figure>
+<h6 id="输出样例：">输出样例：</h6>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">81.82%</span><br></pre></td></tr></table></figure>
+<p>鸣谢安阳师范学院段晓云老师和软件工程五班李富龙同学补充测试数据！</p>
+<h6 id="我的解法-十分通俗易懂">我的解法（十分通俗易懂）</h6>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"> <span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"> <span class="meta">#<span class="keyword">include</span><span class="string">&lt;string&gt;</span></span></span><br><span class="line"> <span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"> <span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"> <span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"> </span>&#123;</span><br><span class="line">     string number;</span><br><span class="line">     cin&gt;&gt;number;</span><br><span class="line">     <span class="type">int</span> c;</span><br><span class="line">     <span class="type">double</span> sum;</span><br><span class="line">     c=number.<span class="built_in">length</span>();</span><br><span class="line">     <span class="type">int</span> i,k=<span class="number">0</span>,len;</span><br><span class="line">     <span class="keyword">if</span>(number[<span class="number">0</span>]==<span class="string">&#x27;-&#x27;</span>)&#123;</span><br><span class="line">         len=c<span class="number">-1</span>;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">else</span> &#123;</span><br><span class="line">         len=c;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;c;i++)&#123;</span><br><span class="line">         <span class="keyword">if</span>(number[i]==<span class="string">&#x27;2&#x27;</span>)k=k+<span class="number">1</span>;</span><br><span class="line">     &#125;</span><br><span class="line">    <span class="keyword">if</span>(number[c<span class="number">-1</span>]%<span class="number">2</span>==<span class="number">0</span>&amp;&amp;number[<span class="number">0</span>]==<span class="string">&#x27;-&#x27;</span>)&#123;</span><br><span class="line">        sum=(<span class="type">double</span>)k/(<span class="type">double</span>)len*<span class="number">1.5</span>*<span class="number">2</span>*<span class="number">100</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(number[c<span class="number">-1</span>]%<span class="number">2</span>==<span class="number">0</span>)&#123;</span><br><span class="line">        sum=(<span class="type">double</span>)k/(<span class="type">double</span>)len*<span class="number">2</span>*<span class="number">100</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(number[<span class="number">0</span>]==<span class="string">&#x27;-&#x27;</span>)&#123;</span><br><span class="line">        sum=(<span class="type">double</span>)k/(<span class="type">double</span>)len*<span class="number">1.5</span>*<span class="number">100</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        sum=(<span class="type">double</span>)k/(<span class="type">double</span>)len*<span class="number">100</span>;</span><br><span class="line">    &#125;</span><br><span class="line">     <span class="built_in">printf</span>(<span class="string">&quot;%.2f&quot;</span>,sum);</span><br><span class="line">     cout&lt;&lt;<span class="string">&quot;%&quot;</span>&lt;&lt;endl;</span><br><span class="line">     <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>刷题</category>
+        <category>PTA</category>
+      </categories>
+      <tags>
+        <tag>天体赛</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我写了一首诗</title>
     <url>/2022/09/12/%E6%88%91%E5%86%99%E4%BA%86%E4%B8%80%E9%A6%96%E8%AF%97/</url>
     <content><![CDATA[<p>没有大结局的故事值得品味吗?</p>
@@ -297,8 +355,8 @@
         <category>PTA</category>
       </categories>
       <tags>
-        <tag>天梯赛</tag>
         <tag>C++</tag>
+        <tag>天梯赛</tag>
       </tags>
   </entry>
   <entry>
@@ -336,8 +394,8 @@
         <category>PTA</category>
       </categories>
       <tags>
-        <tag>java</tag>
         <tag>天梯赛</tag>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -363,8 +421,8 @@
         <category>刷题</category>
       </categories>
       <tags>
-        <tag>天梯赛</tag>
         <tag>C++</tag>
+        <tag>天梯赛</tag>
       </tags>
   </entry>
   <entry>
@@ -426,8 +484,8 @@
         <category>刷题</category>
       </categories>
       <tags>
-        <tag>天梯赛</tag>
         <tag>C++</tag>
+        <tag>天梯赛</tag>
       </tags>
   </entry>
   <entry>

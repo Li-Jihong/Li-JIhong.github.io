@@ -117,14 +117,14 @@
        
   <h1>Vue3快速上手</h1>
 <img src="https://user-images.githubusercontent.com/499550/93624428-53932780-f9ae-11ea-8d16-af949e16a09f.png" style="width:200px">
-<h2 id="1-Vue3简介">1.Vue3简介</h2>
+<h2 id="1-vue3简介">1.Vue3简介</h2>
 <ul>
 <li>2020年9月18日，Vue.js发布3.0版本，代号：One Piece（海贼王）</li>
 <li>耗时2年多、<a target="_blank" rel="noopener" href="https://github.com/vuejs/vue-next/graphs/commit-activity">2600+次提交</a>、<a target="_blank" rel="noopener" href="https://github.com/vuejs/rfcs/tree/master/active-rfcs">30+个RFC</a>、<a target="_blank" rel="noopener" href="https://github.com/vuejs/vue-next/pulls?q=is%3Apr+is%3Amerged+-author%3Aapp%2Fdependabot-preview+">600+次PR</a>、<a target="_blank" rel="noopener" href="https://github.com/vuejs/vue-next/graphs/contributors">99位贡献者</a></li>
 <li>github上的tags地址：<a target="_blank" rel="noopener" href="https://github.com/vuejs/vue-next/releases/tag/v3.0.0">https://github.com/vuejs/vue-next/releases/tag/v3.0.0</a></li>
 </ul>
 <span id="more"></span>
-<h2 id="2-Vue3带来了什么">2.Vue3带来了什么</h2>
+<h2 id="2-vue3带来了什么">2.Vue3带来了什么</h2>
 <h3 id="1-性能的提升">1.性能的提升</h3>
 <ul>
 <li>
@@ -148,7 +148,7 @@
 <p>…</p>
 </li>
 </ul>
-<h3 id="3-拥抱TypeScript">3.拥抱TypeScript</h3>
+<h3 id="3-拥抱typescript">3.拥抱TypeScript</h3>
 <ul>
 <li>Vue3可以更好的支持TypeScript</li>
 </ul>
@@ -251,7 +251,7 @@
 <li>reactive定义的响应式数据是“深层次的”。</li>
 <li>内部基于 ES6 的 Proxy 实现，通过代理对象操作源对象内部数据进行操作。</li>
 </ul>
-<h2 id="4-Vue3-0中的响应式原理">4.Vue3.0中的响应式原理</h2>
+<h2 id="4-vue3-0中的响应式原理">4.Vue3.0中的响应式原理</h2>
 <h3 id="vue2-x的响应式">vue2.x的响应式</h3>
 <ul>
 <li>
@@ -274,7 +274,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="Vue3-0的响应式">Vue3.0的响应式</h3>
+<h3 id="vue3-0的响应式">Vue3.0的响应式</h3>
 <ul>
 <li>实现原理:
 <ul>
@@ -363,7 +363,7 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//情况一：监视ref定义的响应式数据</span></span><br><span class="line"><span class="title function_">watch</span>(sum,<span class="function">(<span class="params">newValue,oldValue</span>)=&gt;</span>&#123;</span><br><span class="line">	<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;sum变化了&#x27;</span>,newValue,oldValue)</span><br><span class="line">&#125;,&#123;<span class="attr">immediate</span>:<span class="literal">true</span>&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//情况二：监视多个ref定义的响应式数据</span></span><br><span class="line"><span class="title function_">watch</span>([sum,msg],<span class="function">(<span class="params">newValue,oldValue</span>)=&gt;</span>&#123;</span><br><span class="line">	<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;sum或msg变化了&#x27;</span>,newValue,oldValue)</span><br><span class="line">&#125;) </span><br><span class="line"></span><br><span class="line"><span class="comment">/* 情况三：监视reactive定义的响应式数据</span></span><br><span class="line"><span class="comment">			若watch监视的是reactive定义的响应式数据，则无法正确获得oldValue！！</span></span><br><span class="line"><span class="comment">			若watch监视的是reactive定义的响应式数据，则强制开启了深度监视 </span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="title function_">watch</span>(person,<span class="function">(<span class="params">newValue,oldValue</span>)=&gt;</span>&#123;</span><br><span class="line">	<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;person变化了&#x27;</span>,newValue,oldValue)</span><br><span class="line">&#125;,&#123;<span class="attr">immediate</span>:<span class="literal">true</span>,<span class="attr">deep</span>:<span class="literal">false</span>&#125;) <span class="comment">//此处的deep配置不再奏效</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//情况四：监视reactive定义的响应式数据中的某个属性</span></span><br><span class="line"><span class="title function_">watch</span>(<span class="function">()=&gt;</span>person.<span class="property">job</span>,<span class="function">(<span class="params">newValue,oldValue</span>)=&gt;</span>&#123;</span><br><span class="line">	<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;person的job变化了&#x27;</span>,newValue,oldValue)</span><br><span class="line">&#125;,&#123;<span class="attr">immediate</span>:<span class="literal">true</span>,<span class="attr">deep</span>:<span class="literal">true</span>&#125;) </span><br><span class="line"></span><br><span class="line"><span class="comment">//情况五：监视reactive定义的响应式数据中的某些属性</span></span><br><span class="line"><span class="title function_">watch</span>([<span class="function">()=&gt;</span>person.<span class="property">job</span>,<span class="function">()=&gt;</span>person.<span class="property">name</span>],<span class="function">(<span class="params">newValue,oldValue</span>)=&gt;</span>&#123;</span><br><span class="line">	<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;person的job变化了&#x27;</span>,newValue,oldValue)</span><br><span class="line">&#125;,&#123;<span class="attr">immediate</span>:<span class="literal">true</span>,<span class="attr">deep</span>:<span class="literal">true</span>&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//特殊情况</span></span><br><span class="line"><span class="title function_">watch</span>(<span class="function">()=&gt;</span>person.<span class="property">job</span>,<span class="function">(<span class="params">newValue,oldValue</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;person的job变化了&#x27;</span>,newValue,oldValue)</span><br><span class="line">&#125;,&#123;<span class="attr">deep</span>:<span class="literal">true</span>&#125;) <span class="comment">//此处由于监视的是reactive素定义的对象中的某个属性，所以deep配置有效</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="3-watchEffect函数">3.watchEffect函数</h3>
+<h3 id="3-watcheffect函数">3.watchEffect函数</h3>
 <ul>
 <li>
 <p>watch的套路是：既要指明监视的属性，也要指明监视的回调。</p>
@@ -413,7 +413,7 @@
 <p>自定义hook的优势: 复用代码, 让setup中的逻辑更清楚易懂。</p>
 </li>
 </ul>
-<h2 id="10-toRef">10.toRef</h2>
+<h2 id="10-toref">10.toRef</h2>
 <ul>
 <li>
 <p>作用：创建一个 ref 对象，其value值指向另一个对象中的某个属性。</p>
@@ -429,7 +429,7 @@
 </li>
 </ul>
 <h1>三、其它 Composition API</h1>
-<h2 id="1-shallowReactive-与-shallowRef">1.shallowReactive 与 shallowRef</h2>
+<h2 id="1-shallowreactive-与-shallowref">1.shallowReactive 与 shallowRef</h2>
 <ul>
 <li>
 <p>shallowReactive：只处理对象最外层属性的响应式（浅响应式）。</p>
@@ -445,13 +445,13 @@
 </ul>
 </li>
 </ul>
-<h2 id="2-readonly-与-shallowReadonly">2.readonly 与 shallowReadonly</h2>
+<h2 id="2-readonly-与-shallowreadonly">2.readonly 与 shallowReadonly</h2>
 <ul>
 <li>readonly: 让一个响应式数据变为只读的（深只读）。</li>
 <li>shallowReadonly：让一个响应式数据变为只读的（浅只读）。</li>
 <li>应用场景: 不希望数据被修改时。</li>
 </ul>
-<h2 id="3-toRaw-与-markRaw">3.toRaw 与 markRaw</h2>
+<h2 id="3-toraw-与-markraw">3.toRaw 与 markRaw</h2>
 <ul>
 <li>toRaw：
 <ul>
@@ -471,7 +471,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="4-customRef">4.customRef</h2>
+<h2 id="4-customref">4.customRef</h2>
 <ul>
 <li>
 <p>作用：创建一个自定义的 ref，并对其依赖项跟踪和更新触发进行显式控制。</p>
@@ -511,29 +511,29 @@
 <li>isProxy: 检查一个对象是否是由 <code>reactive</code> 或者 <code>readonly</code> 方法创建的代理</li>
 </ul>
 <h1>四、Composition API 的优势</h1>
-<h2 id="1-Options-API-存在的问题">1.Options API 存在的问题</h2>
+<h2 id="1-options-api-存在的问题">1.Options API 存在的问题</h2>
 <p>使用传统OptionsAPI中，新增或者修改一个需求，就需要分别在data，methods，computed里修改 。<br>
 <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f84e4e2c02424d9a99862ade0a2e4114~tplv-k3u1fbpfcp-watermark.image"><br>
 <img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e5ac7e20d1784887a826f6360768a368~tplv-k3u1fbpfcp-watermark.image"></p>
-<h2 id="2-Composition-API-的优势">2.Composition API 的优势</h2>
+<h2 id="2-composition-api-的优势">2.Composition API 的优势</h2>
 <p>我们可以更加优雅的组织我们的代码，函数。让相关功能的代码更加有序的组织在一起。<br>
 <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bc0be8211fc54b6c941c036791ba4efe~tplv-k3u1fbpfcp-watermark.image"><br>
 <img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6cc55165c0e34069a75fe36f8712eb80~tplv-k3u1fbpfcp-watermark.image"></p>
 <h1>五、新的组件</h1>
-<h2 id="1-Fragment">1.Fragment</h2>
+<h2 id="1-fragment">1.Fragment</h2>
 <ul>
 <li>在Vue2中: 组件必须有一个根标签</li>
 <li>在Vue3中: 组件可以没有根标签, 内部会将多个标签包含在一个Fragment虚拟元素中</li>
 <li>好处: 减少标签层级, 减小内存占用</li>
 </ul>
-<h2 id="2-Teleport">2.Teleport</h2>
+<h2 id="2-teleport">2.Teleport</h2>
 <ul>
 <li>
 <p>什么是Teleport？—— <code>Teleport</code> 是一种能够将我们的<strong style="color:#DD5145">组件html结构</strong>移动到指定位置的技术。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;teleport to=&quot;移动位置&quot;&gt;</span><br><span class="line">	&lt;div v-if=&quot;isShow&quot; class=&quot;mask&quot;&gt;</span><br><span class="line">		&lt;div class=&quot;dialog&quot;&gt;</span><br><span class="line">			&lt;h3&gt;我是一个弹窗&lt;/h3&gt;</span><br><span class="line">			&lt;button @click=&quot;isShow = false&quot;&gt;关闭弹窗&lt;/button&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/teleport&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="3-Suspense">3.Suspense</h2>
+<h2 id="3-suspense">3.Suspense</h2>
 <ul>
 <li>
 <p>等待异步组件时渲染一些额外内容，让应用有更好的用户体验</p>
@@ -553,7 +553,7 @@
 </li>
 </ul>
 <h1>六、其他</h1>
-<h2 id="1-全局API的转移">1.全局API的转移</h2>
+<h2 id="1-全局api的转移">1.全局API的转移</h2>
 <ul>
 <li>
 <p>Vue 2.x 有许多全局 API 和配置。</p>

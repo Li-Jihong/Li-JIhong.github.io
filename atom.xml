@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-25T07:22:42.051Z</updated>
+  <updated>2022-10-10T02:56:06.309Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PTA天梯赛2022-10-10刷题</title>
+    <link href="http://example.com/2022/10/10/PTA%E5%A4%A9%E6%A2%AF%E8%B5%9B2022-10-10%E5%88%B7%E9%A2%98/"/>
+    <id>http://example.com/2022/10/10/PTA%E5%A4%A9%E6%A2%AF%E8%B5%9B2022-10-10%E5%88%B7%E9%A2%98/</id>
+    <published>2022-10-10T02:41:00.000Z</published>
+    <updated>2022-10-10T02:56:06.309Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://pintia.cn/problem-sets/994805046380707840/exam/problems/994805103557459968&quot;&gt;PTA-天梯赛——L1-030 一帮一&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;“一帮一学习小组”是中小学中常见的学习组织方式，老师把学习成绩靠前的学生跟学习成绩靠后的学生排在一组。本题就请你编写程序帮助老师自动完成这个分配工作，即在得到全班学生的排名后，在当前尚未分组的学生中，将名次最靠前的学生与名次最靠后的异性学生分为一组。&lt;/p&gt;
+&lt;h6 id=&quot;输入格式：&quot;&gt;输入格式：&lt;/h6&gt;
+&lt;p&gt;输入第一行给出正偶数N（≤50），即全班学生的人数。此后N行，按照名次从高到低的顺序给出每个学生的性别（0代表女生，1代表男生）和姓名（不超过8个英文字母的非空字符串），其间以1个空格分隔。这里保证本班男女比例是1:1，并且没有并列名次。&lt;/p&gt;
+&lt;h6 id=&quot;输出格式：&quot;&gt;输出格式：&lt;/h6&gt;
+&lt;p&gt;每行输出一组两个学生的姓名，其间以1个空格分隔。名次高的学生在前，名次低的学生在后。小组的输出顺序按照前面学生的名次从高到低排列。&lt;/p&gt;
+&lt;h6 id=&quot;输入样例：&quot;&gt;输入样例：&lt;/h6&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;0 Amy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1 Tom&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1 Bill&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;0 Cindy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;0 Maya&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1 John&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1 Jack&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;0 Linda&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h6 id=&quot;输出样例：&quot;&gt;输出样例：&lt;/h6&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Amy Jack&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Tom Linda&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Bill Maya&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Cindy John&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="C++" scheme="http://example.com/categories/C/"/>
+    
+    <category term="刷题" scheme="http://example.com/categories/C/%E5%88%B7%E9%A2%98/"/>
+    
+    
+    <category term="PTA" scheme="http://example.com/tags/PTA/"/>
+    
+    <category term="天体赛" scheme="http://example.com/tags/%E5%A4%A9%E4%BD%93%E8%B5%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>PTA天体赛-简单题</title>

@@ -213,6 +213,77 @@
     
     
     <article
+  id="post-通知"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/10/23/%E9%80%9A%E7%9F%A5/"
+    >通知</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/10/23/%E9%80%9A%E7%9F%A5/" class="article-date">
+  <time datetime="2022-10-23T08:38:00.000Z" itemprop="datePublished">2022-10-23</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BB%A3%E7%A0%81%E5%BA%93/">代码库</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="通知">通知</h2>
+<p>由于精力不足，从今天起只在我新开的代码库更新代码，并且没有题目（自行搜索题目），代码库网址在这：<br>
+<a target="_blank" rel="noopener" href="https://gitee.com/ljh04250909/dev-cpp-code">https://gitee.com/ljh04250909/dev-cpp-code</a><br>
+欢迎大家访问！</p>
+<div align="center">
+    <a href=" " alt="个人照" target="_blank"><img src="https://bh04250909.github.io/images/IMG_20220907_154642.jpg" height="250px"></a>
+</div>
+<div align="center">
+    <a href="https://bh04250909.github.io/" target="_blank"><img src="https://img.shields.io/badge/Li__Jihong-CPP-brightgreen.svg"></a>
+    <a href="https://bh04250909.github.io/" target="_blank"><img src="https://img.shields.io/badge/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-%E7%BD%91%E7%AB%99-red.svg"></a>
+    <a href="https://blog.csdn.net/BH04250909?spm=1010.2135.3001.5421" target="_blank"><img src="https://img.shields.io/badge/%E4%B8%AA%E4%BA%BA-CSDN-orange.svg"></a>
+<div>
+<h2 id="dev-cpp代码">Dev_cpp代码</h2>
+<h4 id="介绍">介绍</h4>
+<p>用来记录我在Dev_cpp上面写的代码</p>
+<h4 id="打个小广告">打个小广告</h4>
+<p>我的个人博客网站欢迎大家访问：<a target="_blank" rel="noopener" href="https://bh04250909.github.io/">https://bh04250909.github.io/</a></p>
+</div></div> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gitee/" rel="tag">gitee</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
   id="post-PTA天梯赛2022-10-10刷题"
   class="article article-type-post"
   itemscope
@@ -269,6 +340,133 @@
        
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PTA/" rel="tag">PTA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A4%A9%E4%BD%93%E8%B5%9B/" rel="tag">天体赛</a></li></ul>
 
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
+  id="post-LeetCode刷题"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/10/06/LeetCode%E5%88%B7%E9%A2%98/"
+    >LeetCode刷题</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/10/06/LeetCode%E5%88%B7%E9%A2%98/" class="article-date">
+  <time datetime="2022-10-06T11:27:59.315Z" itemprop="datePublished">2022-10-06</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%88%B7%E9%A2%98/">刷题</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1><strong>LeetCode刷题记录</strong></h1>
+<h1>贪心算法</h1>
+<h2 id="435-无重叠区间"><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/non-overlapping-intervals/">435——无重叠区间</a></h2>
+<blockquote>
+<p>2022-08-014</p>
+</blockquote>
+<p><strong>方法1.动态规划</strong></p>
+<ul>
+<li>
+<p>思路: dp[i]表示前i个区间中最大不重合区间的个数，首先将区间数组按左边界排序，找出intervals中最多有多少个不重复的区间，动态规划方程dp[i] = Math.max(dp[i]，dp[j] + 1)。intervals的长度减去最多的不重复的区间就是最少删除区间的个数</p>
+</li>
+<li>
+<p>复杂度:时间复杂度0(n^2)，两层嵌套循环leetcode执行超时复杂度过高。空间复杂度0(n), dp数组的空间</p>
+<p><strong>javascript</strong></p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//leetcode执行超时 复杂度过高</span></span><br><span class="line"><span class="keyword">var</span> eraseOverlapIntervals = <span class="keyword">function</span> (<span class="params">intervals</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (!intervals.<span class="property">length</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    intervals.<span class="title function_">sort</span>(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a[<span class="number">0</span>] - b[<span class="number">0</span>]); <span class="comment">//按左边界排序</span></span><br><span class="line">    <span class="keyword">const</span> n = intervals.<span class="property">length</span>;</span><br><span class="line">    <span class="keyword">const</span> dp = <span class="keyword">new</span> <span class="title class_">Array</span>(n).<span class="title function_">fill</span>(<span class="number">1</span>); <span class="comment">//初始化dp数组</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">0</span>; j &lt; i; j++) &#123;</span><br><span class="line">            <span class="comment">//循环i,j找出intervals中最多有多少个不重复的区间</span></span><br><span class="line">            <span class="comment">//j的右边界小于i的左边界 相当于多出了一个不重合区间</span></span><br><span class="line">            <span class="keyword">if</span> (intervals[j][<span class="number">1</span>] &lt;= intervals[i][<span class="number">0</span>]) &#123;</span><br><span class="line">                dp[i] = <span class="title class_">Math</span>.<span class="title function_">max</span>(dp[i], dp[j] + <span class="number">1</span>); <span class="comment">//更新dp[i]</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> n - <span class="title class_">Math</span>.<span class="title function_">max</span>(...dp); <span class="comment">//n减去最多的不重复的区间 就是最少删除区间的个数</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure> 
+      <a class="article-more-link" href="/2022/10/06/LeetCode%E5%88%B7%E9%A2%98/"
+        >阅读更多...</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/leetcode/" rel="tag">leetcode</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
+  id="post-hello-world"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/10/06/hello-world/"
+    >Hello World</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/10/06/hello-world/" class="article-date">
+  <time datetime="2022-10-06T11:27:59.297Z" itemprop="datePublished">2022-10-06</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="quick-start">Quick Start</h2> 
+      <a class="article-more-link" href="/2022/10/06/hello-world/"
+        >阅读更多...</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
     </footer>
   </div>
 
@@ -648,203 +846,6 @@ C++要多看STL，多运用标准库函数，容器等等，达到熟练的水�
     <footer class="article-footer">
        
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%9A%8F%E7%AC%94/" rel="tag">随笔</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
-    <article
-  id="post-日常感悟"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/09/11/%E6%97%A5%E5%B8%B8%E6%84%9F%E6%82%9F/"
-    >如果再来一次,,,,,,,,,,,,,哪有如果啊</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2022/09/11/%E6%97%A5%E5%B8%B8%E6%84%9F%E6%82%9F/" class="article-date">
-  <time datetime="2022-09-11T08:21:00.000Z" itemprop="datePublished">2022-09-11</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%9D%8E%E5%AD%A3%E9%B8%BF%E7%9A%84%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/">李季鸿的日常随笔</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p><strong>音乐真的可以表达心情，睡不着的每个夜全靠以前的每个律动进行催眠</strong></p>
-<p>如果再来一次，我可能会选择不遇见你。</p>
-<p>如果再来一次，我可能尽量不和你接触，不说话，平平淡淡的相逢可能也会比现在的结局好看。</p>
-<p>如果再来一次，我可能变得开朗，至少不像现在那么迷茫。</p>
-<p>如果再来一次，我可能会选择远远观赏，而不是放大缺点，人的成长总是悄无声息的，而我却失去了耐心去等待。</p> 
-      <a class="article-more-link" href="/2022/09/11/%E6%97%A5%E5%B8%B8%E6%84%9F%E6%82%9F/"
-        >阅读更多...</a
-      >
-       
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%9A%8F%E7%AC%94/" rel="tag">随笔</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
-    <article
-  id="post-度学习之——卷积神经网络"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/09/11/%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B9%8B%E2%80%94%E2%80%94%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"
-    >深度学习之——卷积神经网络</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2022/09/11/%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B9%8B%E2%80%94%E2%80%94%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" class="article-date">
-  <time datetime="2022-09-11T03:40:00.000Z" itemprop="datePublished">2022-09-11</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h6 id="背景">背景</h6>
-<img src="/images/image-20220911114410844.png" alt="引申背景" style="zoom:40%;">
-> 是否可能进─步减少训练参数数量?
-> 办法:提取出图像中的关键信息(轮廓)，再建立MLP模型进行训练
-<h6 id="图像卷积运算">图像卷积运算</h6>
-<blockquote>
-<p>对图像矩阵与滤波器矩阵进行对应相乘再求和运算，转化得到新的矩阵,作用:<strong>快速定位图像中某些边缘特征</strong><br>
-英文: convolution  —&gt; CNN</p>
-</blockquote>
-<p>A与B的卷积通常表示为:  A * B或convolution(A,B)<br>
-<img src="/images/image-20220911121624085.png" alt="运算规则" style="zoom:33%;"><br>
-<img src="/images/image-20220911122142445.png" alt="转换后" style="zoom:33%;"></p> 
-      <a class="article-more-link" href="/2022/09/11/%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B9%8B%E2%80%94%E2%80%94%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"
-        >阅读更多...</a
-      >
-       
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" rel="tag">深度学习</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
-    <article
-  id="post-PTA-天梯赛——L1-016-查验身份证"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/09/08/PTA-%E5%A4%A9%E6%A2%AF%E8%B5%9B%E2%80%94%E2%80%94L1-016-%E6%9F%A5%E9%AA%8C%E8%BA%AB%E4%BB%BD%E8%AF%81/"
-    >PTA-天梯赛——L1-016 查验身份证</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2022/09/08/PTA-%E5%A4%A9%E6%A2%AF%E8%B5%9B%E2%80%94%E2%80%94L1-016-%E6%9F%A5%E9%AA%8C%E8%BA%AB%E4%BB%BD%E8%AF%81/" class="article-date">
-  <time datetime="2022-09-08T13:51:00.000Z" itemprop="datePublished">2022-09-08</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%88%B7%E9%A2%98/">刷题</a> / <a class="article-category-link" href="/categories/%E5%88%B7%E9%A2%98/PTA/">PTA</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p><a target="_blank" rel="noopener" href="https://pintia.cn/problem-sets/994805046380707840/problems/994805122985476096">PTA-天梯赛——L1-016 查验身份证</a></p>
-<p>一个合法的身份证号码由17位地区、日期编号和顺序编号加1位校验码组成。校验码的计算规则如下：</p>
-<p>首先对前17位数字加权求和，权重分配为：{7，9，10，5，8，4，2，1，6，3，7，9，10，5，8，4，2}；然后将计算的和对11取模得到值Z；最后按照以下关系对应Z值与校验码M的值：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Z：0 1 2 3 4 5 6 7 8 9 10</span><br><span class="line">M：1 0 X 9 8 7 6 5 4 3 2</span><br></pre></td></tr></table></figure>
-<p>现在给定一些身份证号码，请你验证校验码的有效性，并输出有问题的号码。</p>
-<h6 id="输入格式：">输入格式：</h6>
-<p>输入第一行给出正整数N（≤100）是输入的身份证号码的个数。随后N行，每行给出1个18位身份证号码。</p>
-<h6 id="输出格式：">输出格式：</h6>
-<p>按照输入的顺序每行输出1个有问题的身份证号码。这里并不检验前17位是否合理，只检查前17位是否全为数字且最后1位校验码计算准确。如果所有号码都正常，则输出All passed。</p> 
-      <a class="article-more-link" href="/2022/09/08/PTA-%E5%A4%A9%E6%A2%AF%E8%B5%9B%E2%80%94%E2%80%94L1-016-%E6%9F%A5%E9%AA%8C%E8%BA%AB%E4%BB%BD%E8%AF%81/"
-        >阅读更多...</a
-      >
-       
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/" rel="tag">天梯赛</a></li></ul>
 
     </footer>
   </div>

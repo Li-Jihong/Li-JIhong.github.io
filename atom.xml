@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-10T02:56:06.309Z</updated>
+  <updated>2022-10-23T08:44:08.613Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>通知</title>
+    <link href="http://example.com/2022/10/23/%E9%80%9A%E7%9F%A5/"/>
+    <id>http://example.com/2022/10/23/%E9%80%9A%E7%9F%A5/</id>
+    <published>2022-10-23T08:38:00.000Z</published>
+    <updated>2022-10-23T08:44:08.613Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;通知&quot;&gt;通知&lt;/h2&gt;
+&lt;p&gt;由于精力不足，从今天起只在我新开的代码库更新代码，并且没有题目（自行搜索题目），代码库网址在这：&lt;br&gt;
+&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="代码库" scheme="http://example.com/categories/%E4%BB%A3%E7%A0%81%E5%BA%93/"/>
+    
+    
+    <category term="gitee" scheme="http://example.com/tags/gitee/"/>
+    
+  </entry>
   
   <entry>
     <title>PTA天梯赛2022-10-10刷题</title>
@@ -49,6 +76,57 @@
   </entry>
   
   <entry>
+    <title>LeetCode刷题</title>
+    <link href="http://example.com/2022/10/06/LeetCode%E5%88%B7%E9%A2%98/"/>
+    <id>http://example.com/2022/10/06/LeetCode%E5%88%B7%E9%A2%98/</id>
+    <published>2022-10-06T11:27:59.315Z</published>
+    <updated>2022-09-07T06:52:25.850Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;&lt;strong&gt;LeetCode刷题记录&lt;/strong&gt;&lt;/h1&gt;
+&lt;h1&gt;贪心算法&lt;/h1&gt;
+&lt;h2 id=&quot;435-无重叠区间&quot;&gt;&lt;a href=&quot;https://leetcode.cn/problems/non-overlapping-intervals/&quot;&gt;435——无重叠区间&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2022-08-014&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;方法1.动态规划&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;思路: dp[i]表示前i个区间中最大不重合区间的个数，首先将区间数组按左边界排序，找出intervals中最多有多少个不重复的区间，动态规划方程dp[i] = Math.max(dp[i]，dp[j] + 1)。intervals的长度减去最多的不重复的区间就是最少删除区间的个数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;复杂度:时间复杂度0(n^2)，两层嵌套循环leetcode执行超时复杂度过高。空间复杂度0(n), dp数组的空间&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;javascript&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//leetcode执行超时 复杂度过高&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; eraseOverlapIntervals = &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;intervals&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (!intervals.&lt;span class=&quot;property&quot;&gt;length&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    intervals.&lt;span class=&quot;title function_&quot;&gt;sort&lt;/span&gt;(&lt;span class=&quot;function&quot;&gt;(&lt;span class=&quot;params&quot;&gt;a, b&lt;/span&gt;) =&amp;gt;&lt;/span&gt; a[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] - b[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]); &lt;span class=&quot;comment&quot;&gt;//按左边界排序&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; n = intervals.&lt;span class=&quot;property&quot;&gt;length&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; dp = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;title class_&quot;&gt;Array&lt;/span&gt;(n).&lt;span class=&quot;title function_&quot;&gt;fill&lt;/span&gt;(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//初始化dp数组&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;; i &amp;lt; n; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; j = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; j &amp;lt; i; j++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//循环i,j找出intervals中最多有多少个不重复的区间&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//j的右边界小于i的左边界 相当于多出了一个不重合区间&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (intervals[j][&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] &amp;lt;= intervals[i][&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                dp[i] = &lt;span class=&quot;title class_&quot;&gt;Math&lt;/span&gt;.&lt;span class=&quot;title function_&quot;&gt;max&lt;/span&gt;(dp[i], dp[j] + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//更新dp[i]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; n - &lt;span class=&quot;title class_&quot;&gt;Math&lt;/span&gt;.&lt;span class=&quot;title function_&quot;&gt;max&lt;/span&gt;(...dp); &lt;span class=&quot;comment&quot;&gt;//n减去最多的不重复的区间 就是最少删除区间的个数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="刷题" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+    
+    <category term="leetcode" scheme="http://example.com/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2022/10/06/hello-world/"/>
+    <id>http://example.com/2022/10/06/hello-world/</id>
+    <published>2022-10-06T11:27:59.297Z</published>
+    <updated>2022-09-08T02:09:05.447Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;quick-start&quot;&gt;Quick Start&lt;/h2&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>PTA天体赛-简单题</title>
     <link href="http://example.com/2022/09/25/PTA%E5%A4%A9%E4%BD%93%E8%B5%9B-%E7%AE%80%E5%8D%95%E9%A2%98/"/>
     <id>http://example.com/2022/09/25/PTA%E5%A4%A9%E4%BD%93%E8%B5%9B-%E7%AE%80%E5%8D%95%E9%A2%98/</id>
@@ -75,9 +153,9 @@ C++要多看STL，多运用标准库函数，容器等等，达到熟练的水�
     <category term="PTA" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/PTA/"/>
     
     
-    <category term="C++" scheme="http://example.com/tags/C/"/>
-    
     <category term="天梯赛" scheme="http://example.com/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
     
   </entry>
   
@@ -156,9 +234,9 @@ C++要多看STL，多运用标准库函数，容器等等，达到熟练的水�
     <category term="PTA" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/PTA/"/>
     
     
-    <category term="C++" scheme="http://example.com/tags/C/"/>
-    
     <category term="天梯赛" scheme="http://example.com/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
     
   </entry>
   
@@ -184,9 +262,9 @@ C++要多看STL，多运用标准库函数，容器等等，达到熟练的水�
     <category term="PTA" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/PTA/"/>
     
     
-    <category term="C++" scheme="http://example.com/tags/C/"/>
-    
     <category term="天梯赛" scheme="http://example.com/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
     
   </entry>
   
@@ -294,9 +372,9 @@ C++要多看STL，多运用标准库函数，容器等等，达到熟练的水�
     <category term="PTA" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/PTA/"/>
     
     
-    <category term="C++" scheme="http://example.com/tags/C/"/>
-    
     <category term="天梯赛" scheme="http://example.com/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
     
   </entry>
   
@@ -381,9 +459,9 @@ C++要多看STL，多运用标准库函数，容器等等，达到熟练的水�
     <category term="刷题" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/"/>
     
     
-    <category term="C++" scheme="http://example.com/tags/C/"/>
-    
     <category term="天梯赛" scheme="http://example.com/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/"/>
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
     
   </entry>
   
@@ -437,60 +515,9 @@ C++要多看STL，多运用标准库函数，容器等等，达到熟练的水�
     <category term="刷题" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/"/>
     
     
-    <category term="C++" scheme="http://example.com/tags/C/"/>
-    
     <category term="天梯赛" scheme="http://example.com/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/"/>
     
-  </entry>
-  
-  <entry>
-    <title>LeetCode刷题</title>
-    <link href="http://example.com/2022/09/07/LeetCode%E5%88%B7%E9%A2%98/"/>
-    <id>http://example.com/2022/09/07/LeetCode%E5%88%B7%E9%A2%98/</id>
-    <published>2022-09-07T13:19:11.958Z</published>
-    <updated>2022-09-07T06:52:25.850Z</updated>
-    
-    
-    <summary type="html">&lt;h1&gt;&lt;strong&gt;LeetCode刷题记录&lt;/strong&gt;&lt;/h1&gt;
-&lt;h1&gt;贪心算法&lt;/h1&gt;
-&lt;h2 id=&quot;435-无重叠区间&quot;&gt;&lt;a href=&quot;https://leetcode.cn/problems/non-overlapping-intervals/&quot;&gt;435——无重叠区间&lt;/a&gt;&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;2022-08-014&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;方法1.动态规划&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;思路: dp[i]表示前i个区间中最大不重合区间的个数，首先将区间数组按左边界排序，找出intervals中最多有多少个不重复的区间，动态规划方程dp[i] = Math.max(dp[i]，dp[j] + 1)。intervals的长度减去最多的不重复的区间就是最少删除区间的个数&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;复杂度:时间复杂度0(n^2)，两层嵌套循环leetcode执行超时复杂度过高。空间复杂度0(n), dp数组的空间&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;javascript&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//leetcode执行超时 复杂度过高&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; eraseOverlapIntervals = &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;intervals&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (!intervals.&lt;span class=&quot;property&quot;&gt;length&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    intervals.&lt;span class=&quot;title function_&quot;&gt;sort&lt;/span&gt;(&lt;span class=&quot;function&quot;&gt;(&lt;span class=&quot;params&quot;&gt;a, b&lt;/span&gt;) =&amp;gt;&lt;/span&gt; a[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] - b[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]); &lt;span class=&quot;comment&quot;&gt;//按左边界排序&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; n = intervals.&lt;span class=&quot;property&quot;&gt;length&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; dp = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;title class_&quot;&gt;Array&lt;/span&gt;(n).&lt;span class=&quot;title function_&quot;&gt;fill&lt;/span&gt;(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//初始化dp数组&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;; i &amp;lt; n; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; j = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; j &amp;lt; i; j++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//循环i,j找出intervals中最多有多少个不重复的区间&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//j的右边界小于i的左边界 相当于多出了一个不重合区间&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (intervals[j][&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] &amp;lt;= intervals[i][&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                dp[i] = &lt;span class=&quot;title class_&quot;&gt;Math&lt;/span&gt;.&lt;span class=&quot;title function_&quot;&gt;max&lt;/span&gt;(dp[i], dp[j] + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//更新dp[i]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; n - &lt;span class=&quot;title class_&quot;&gt;Math&lt;/span&gt;.&lt;span class=&quot;title function_&quot;&gt;max&lt;/span&gt;(...dp); &lt;span class=&quot;comment&quot;&gt;//n减去最多的不重复的区间 就是最少删除区间的个数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="刷题" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/"/>
-    
-    
-    <category term="leetcode" scheme="http://example.com/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2022/09/07/hello-world/"/>
-    <id>http://example.com/2022/09/07/hello-world/</id>
-    <published>2022-09-07T13:19:11.957Z</published>
-    <updated>2022-09-08T02:09:05.447Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;quick-start&quot;&gt;Quick Start&lt;/h2&gt;</summary>
-    
-    
-    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
     
   </entry>
   

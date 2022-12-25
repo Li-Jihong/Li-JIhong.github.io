@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>谨以此网页，献给一个女孩</title>
+  
+  <subtitle>李季鸿的博客</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-12-25T06:19:50.265Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Li Jihong</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>感慨</title>
+    <link href="http://example.com/2022/12/24/%E6%84%9F%E6%85%A8/"/>
+    <id>http://example.com/2022/12/24/%E6%84%9F%E6%85%A8/</id>
+    <published>2022-12-24T14:30:00.000Z</published>
+    <updated>2022-12-25T06:19:50.265Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;一寸土一年木一花一树一贪图&lt;/p&gt;
+&lt;p&gt;情是种爱偏开在迷途&lt;/p&gt;
+&lt;p&gt;忘前路忘旧物忘心忘你忘最初&lt;/p&gt;
+&lt;p&gt;花斑斑留在爱你的路&lt;/p&gt;
+&lt;p&gt;虔诚夙愿来世路&lt;/p&gt;
+&lt;p&gt;一念桃花因果渡&lt;/p&gt;
+&lt;p&gt;那一念几阙时光在重复&lt;/p&gt;
+&lt;p&gt;听雨书望天湖人间寥寥情难诉</summary>
+        
+      
+    
+    
+    
+    <category term="李季鸿的日常随笔" scheme="http://example.com/categories/%E6%9D%8E%E5%AD%A3%E9%B8%BF%E7%9A%84%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="随笔" scheme="http://example.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>算法模板1-2</title>
+    <link href="http://example.com/2022/12/24/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF1-2/"/>
+    <id>http://example.com/2022/12/24/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF1-2/</id>
+    <published>2022-12-24T14:17:00.000Z</published>
+    <updated>2022-12-25T06:19:46.094Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;第一阶段：&lt;/h1&gt;
+&lt;h2 id=&quot;快速排序：&quot;&gt;快速排序：&lt;/h2&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;keyword&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;namespace&lt;/span&gt; std;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;type&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;type&quot;&gt;int&lt;/span&gt; N = &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;type&quot;&gt;int&lt;/span&gt; n;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;type&quot;&gt;int&lt;/span&gt; q[N];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//快速排序&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;type&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;quick_sort&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;type&quot;&gt;int&lt;/span&gt; s[], &lt;span class=&quot;type&quot;&gt;int&lt;/span&gt; l, &lt;span class=&quot;type&quot;&gt;int&lt;/span&gt; r)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (l &amp;lt; r)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//Swap(s[l], s[(l + r) / 2]); //将中间的这个数和第一个数交换 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;type&quot;&gt;int&lt;/span&gt; i = l, j = r, x = s[l];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (i &amp;lt; j)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;(i &amp;lt; j &amp;amp;&amp;amp; s[j] &amp;gt;= x) &lt;span class=&quot;comment&quot;&gt;// 从右向左找第一个小于x的数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                j--;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(i &amp;lt; j) &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                s[i++] = s[j];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;(i &amp;lt; j &amp;amp;&amp;amp; s[i] &amp;lt; x) &lt;span class=&quot;comment&quot;&gt;// 从左向右找第一个大于等于x的数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                i++;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(i &amp;lt; j) &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                s[j--] = s[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        s[i] = x;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;quick_sort&lt;/span&gt;(s, l, i - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;// 递归调用 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;quick_sort&lt;/span&gt;(s, i + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, r);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;type&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 	&lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;quot;%d&amp;quot;&lt;/span&gt;, &amp;amp;n);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;type&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; n; i++) &lt;span class=&quot;built_in&quot;&gt;scanf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;quot;%d&amp;quot;&lt;/span&gt;, &amp;amp;q[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;quick_sort&lt;/span&gt;(q, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, n - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;type&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; n; i++) &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;quot;%d &amp;quot;&lt;/span&gt;, q[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="算法模板" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/"/>
+    
+    
+    <category term="编程" scheme="http://example.com/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>加入《Dev_cpp代码》代码库的操作手册</title>
+    <link href="http://example.com/2022/10/31/%E5%8A%A0%E5%85%A5%E3%80%8ADev-cpp%E4%BB%A3%E7%A0%81%E3%80%8B%E4%BB%A3%E7%A0%81%E5%BA%93%E7%9A%84%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/"/>
+    <id>http://example.com/2022/10/31/%E5%8A%A0%E5%85%A5%E3%80%8ADev-cpp%E4%BB%A3%E7%A0%81%E3%80%8B%E4%BB%A3%E7%A0%81%E5%BA%93%E7%9A%84%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/</id>
+    <published>2022-10-30T18:10:00.000Z</published>
+    <updated>2022-10-30T18:15:18.853Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;考虑到加入我们的代码库以后可能会有源源不断的人加入，so，鄙人打算写一个详细的操作手册告诉后人如何操作（在此不得不吐槽hlh同学，我诚心邀请他和我一起编写此手册，他居然因为懒直接一口拒绝了我。。）&lt;/p&gt;
+&lt;h3 id=&quot;1-安装git&quot;&gt;1.安装git&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://git-scm.com&quot;&gt;https://git-scm.com&lt;/a&gt; 这是git的官网&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;进入后点击Downloads，下载下面的这个版本：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="代码库" scheme="http://example.com/categories/%E4%BB%A3%E7%A0%81%E5%BA%93/"/>
+    
+    
+    <category term="刷题" scheme="http://example.com/tags/%E5%88%B7%E9%A2%98/"/>
+    
+    <category term="gitee" scheme="http://example.com/tags/gitee/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode刷题</title>
+    <link href="http://example.com/2022/10/31/LeetCode%E5%88%B7%E9%A2%98/"/>
+    <id>http://example.com/2022/10/31/LeetCode%E5%88%B7%E9%A2%98/</id>
+    <published>2022-10-30T16:10:20.927Z</published>
+    <updated>2022-09-07T06:52:25.850Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;&lt;strong&gt;LeetCode刷题记录&lt;/strong&gt;&lt;/h1&gt;
+&lt;h1&gt;贪心算法&lt;/h1&gt;
+&lt;h2 id=&quot;435-无重叠区间&quot;&gt;&lt;a href=&quot;https://leetcode.cn/problems/non-overlapping-intervals/&quot;&gt;435——无重叠区间&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2022-08-014&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;方法1.动态规划&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;思路: dp[i]表示前i个区间中最大不重合区间的个数，首先将区间数组按左边界排序，找出intervals中最多有多少个不重复的区间，动态规划方程dp[i] = Math.max(dp[i]，dp[j] + 1)。intervals的长度减去最多的不重复的区间就是最少删除区间的个数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;复杂度:时间复杂度0(n^2)，两层嵌套循环leetcode执行超时复杂度过高。空间复杂度0(n), dp数组的空间&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;javascript&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//leetcode执行超时 复杂度过高&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; eraseOverlapIntervals = &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;intervals&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (!intervals.&lt;span class=&quot;property&quot;&gt;length&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    intervals.&lt;span class=&quot;title function_&quot;&gt;sort&lt;/span&gt;(&lt;span class=&quot;function&quot;&gt;(&lt;span class=&quot;params&quot;&gt;a, b&lt;/span&gt;) =&amp;gt;&lt;/span&gt; a[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] - b[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]); &lt;span class=&quot;comment&quot;&gt;//按左边界排序&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; n = intervals.&lt;span class=&quot;property&quot;&gt;length&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; dp = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;title class_&quot;&gt;Array&lt;/span&gt;(n).&lt;span class=&quot;title function_&quot;&gt;fill&lt;/span&gt;(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//初始化dp数组&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;; i &amp;lt; n; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; j = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; j &amp;lt; i; j++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//循环i,j找出intervals中最多有多少个不重复的区间&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//j的右边界小于i的左边界 相当于多出了一个不重合区间&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (intervals[j][&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] &amp;lt;= intervals[i][&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                dp[i] = &lt;span class=&quot;title class_&quot;&gt;Math&lt;/span&gt;.&lt;span class=&quot;title function_&quot;&gt;max&lt;/span&gt;(dp[i], dp[j] + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//更新dp[i]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; n - &lt;span class=&quot;title class_&quot;&gt;Math&lt;/span&gt;.&lt;span class=&quot;title function_&quot;&gt;max&lt;/span&gt;(...dp); &lt;span class=&quot;comment&quot;&gt;//n减去最多的不重复的区间 就是最少删除区间的个数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="刷题" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+    
+    <category term="leetcode" scheme="http://example.com/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2022/10/31/hello-world/"/>
+    <id>http://example.com/2022/10/31/hello-world/</id>
+    <published>2022-10-30T16:10:20.920Z</published>
+    <updated>2022-09-08T02:09:05.447Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;quick-start&quot;&gt;Quick Start&lt;/h2&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>通知</title>
+    <link href="http://example.com/2022/10/23/%E9%80%9A%E7%9F%A5/"/>
+    <id>http://example.com/2022/10/23/%E9%80%9A%E7%9F%A5/</id>
+    <published>2022-10-23T08:38:00.000Z</published>
+    <updated>2022-10-23T08:44:08.613Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;通知&quot;&gt;通知&lt;/h2&gt;
+&lt;p&gt;由于精力不足，从今天起只在我新开的代码库更新代码，并且没有题目（自行搜索题目），代码库网址在这：&lt;br&gt;
+&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="代码库" scheme="http://example.com/categories/%E4%BB%A3%E7%A0%81%E5%BA%93/"/>
+    
+    
+    <category term="gitee" scheme="http://example.com/tags/gitee/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PTA天梯赛2022-10-10刷题</title>
+    <link href="http://example.com/2022/10/10/PTA%E5%A4%A9%E6%A2%AF%E8%B5%9B2022-10-10%E5%88%B7%E9%A2%98/"/>
+    <id>http://example.com/2022/10/10/PTA%E5%A4%A9%E6%A2%AF%E8%B5%9B2022-10-10%E5%88%B7%E9%A2%98/</id>
+    <published>2022-10-10T02:41:00.000Z</published>
+    <updated>2022-10-10T02:56:06.309Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://pintia.cn/problem-sets/994805046380707840/exam/problems/994805103557459968&quot;&gt;PTA-天梯赛——L1-030 一帮一&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;“一帮一学习小组”是中小学中常见的学习组织方式，老师把学习成绩靠前的学生跟学习成绩靠后的学生排在一组。本题就请你编写程序帮助老师自动完成这个分配工作，即在得到全班学生的排名后，在当前尚未分组的学生中，将名次最靠前的学生与名次最靠后的异性学生分为一组。&lt;/p&gt;
+&lt;h6 id=&quot;输入格式：&quot;&gt;输入格式：&lt;/h6&gt;
+&lt;p&gt;输入第一行给出正偶数N（≤50），即全班学生的人数。此后N行，按照名次从高到低的顺序给出每个学生的性别（0代表女生，1代表男生）和姓名（不超过8个英文字母的非空字符串），其间以1个空格分隔。这里保证本班男女比例是1:1，并且没有并列名次。&lt;/p&gt;
+&lt;h6 id=&quot;输出格式：&quot;&gt;输出格式：&lt;/h6&gt;
+&lt;p&gt;每行输出一组两个学生的姓名，其间以1个空格分隔。名次高的学生在前，名次低的学生在后。小组的输出顺序按照前面学生的名次从高到低排列。&lt;/p&gt;
+&lt;h6 id=&quot;输入样例：&quot;&gt;输入样例：&lt;/h6&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;0 Amy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1 Tom&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1 Bill&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;0 Cindy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;0 Maya&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1 John&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1 Jack&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;0 Linda&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h6 id=&quot;输出样例：&quot;&gt;输出样例：&lt;/h6&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Amy Jack&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Tom Linda&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Bill Maya&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Cindy John&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="C++" scheme="http://example.com/categories/C/"/>
+    
+    <category term="刷题" scheme="http://example.com/categories/C/%E5%88%B7%E9%A2%98/"/>
+    
+    
+    <category term="PTA" scheme="http://example.com/tags/PTA/"/>
+    
+    <category term="天体赛" scheme="http://example.com/tags/%E5%A4%A9%E4%BD%93%E8%B5%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PTA天体赛-简单题</title>
+    <link href="http://example.com/2022/09/25/PTA%E5%A4%A9%E4%BD%93%E8%B5%9B-%E7%AE%80%E5%8D%95%E9%A2%98/"/>
+    <id>http://example.com/2022/09/25/PTA%E5%A4%A9%E4%BD%93%E8%B5%9B-%E7%AE%80%E5%8D%95%E9%A2%98/</id>
+    <published>2022-09-25T07:18:00.000Z</published>
+    <updated>2022-09-25T07:22:42.051Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今天做的是一些简单的题目，可以用弱智来形容了，但是最后一题你能想到比我更简单的做法吗？&lt;br&gt;
+C++要多看STL，多运用标准库函数，容器等等，达到熟练的水平。&lt;/p&gt;
+&lt;h5 id=&quot;pta-天梯赛-l1-019-谁先倒&quot;&gt;&lt;a href=&quot;https://pintia.cn/problem-sets/994805046380707840/problems/994805118568873984&quot;&gt;PTA-天梯赛——L1-019 谁先倒&lt;/a&gt;&lt;/h5&gt;
+&lt;p&gt;划拳是古老中国酒文化的一个有趣的组成部分。酒桌上两人划拳的方法为：每人口中喊出一个数字，同时用手比划出一个数字。如果谁比划出的数字正好等于两人喊出的数字之和，谁就输了，输家罚一杯酒。两人同赢或两人同输则继续下一轮，直到唯一的赢家出现。&lt;/p&gt;
+&lt;p&gt;下面给出甲、乙两人的酒量（最多能喝多少杯不倒）和划拳记录，请你判断两个人谁先倒。&lt;/p&gt;
+&lt;h6 id=&quot;输入格式：&quot;&gt;输入格式：&lt;/h6&gt;
+&lt;p&gt;输入第一行先后给出甲、乙两人的酒量（不超过100的非负整数），以空格分隔。下一行给出一个正整数&lt;code&gt;N&lt;/code&gt;（≤100），随后&lt;code&gt;N&lt;/code&gt;行，每行给出一轮划拳的记录，格式为：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;甲喊 甲划 乙喊 乙划&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;其中&lt;code&gt;喊&lt;/code&gt;是喊出的数字，&lt;code&gt;划&lt;/code&gt;是划出的数字，均为不超过100的正整数（两只手一起划）。&lt;/p&gt;
+&lt;h6 id=&quot;输出格式：&quot;&gt;输出格式：&lt;/h6&gt;
+&lt;p&gt;在第一行中输出先倒下的那个人：&lt;code&gt;A&lt;/code&gt;代表甲，&lt;code&gt;B&lt;/code&gt;代表乙。第二行中输出没倒的那个人喝了多少杯。题目保证有一个人倒下。注意程序处理到有人倒下就终止，后面的数据不必处理。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="刷题" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+    <category term="PTA" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/PTA/"/>
+    
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
+    
+    <category term="天梯赛" scheme="http://example.com/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++中STL用法超详细总结</title>
+    <link href="http://example.com/2022/09/23/C-%E4%B8%ADSTL%E7%94%A8%E6%B3%95%E8%B6%85%E8%AF%A6%E7%BB%86%E6%80%BB%E7%BB%93/"/>
+    <id>http://example.com/2022/09/23/C-%E4%B8%ADSTL%E7%94%A8%E6%B3%95%E8%B6%85%E8%AF%A6%E7%BB%86%E6%80%BB%E7%BB%93/</id>
+    <published>2022-09-23T01:32:00.000Z</published>
+    <updated>2022-09-23T01:54:08.324Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;1 什么是STL？&lt;/h1&gt;
+&lt;p&gt;STL（Standard Template Library），即标准模板库，是一个具有工业强度的，高效的C++程序库。它被容纳于C++标准程序库（C++ Standard Library）中，是ANSI/ISO C++标准中最新的也是极具革命性的一部分。该库包含了诸多在计算机科学领域里所常用的基本数据结构和基本算法。为广大C++程序员们提供了一个可扩展的应用框架，高度体现了软件的可复用性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;STL的一个重要特点是数据结构和算法的分离&lt;/strong&gt;。尽管这是个简单的概念，但这种分离确实使得STL变得非常通用。例如，由于STL的sort()函数是完全通用的，你可以用它来操作几乎任何数据集合，包括链表，容器和数组；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;STL另一个重要特性是它不是面向对象的&lt;/strong&gt;。为了具有足够通用性，STL主要依赖于模板而不是封装，继承和虚函数（多态性）——OOP的三个要素。你在STL中找不到任何明显的类继承关系。这好像是一种倒退，但这正好是使得STL的组件具有广泛通用性的底层特征。另外，由于STL是基于模板，内联函数的使用使得生成的代码短小高效；&lt;/p&gt;
+&lt;p&gt;从逻辑层次来看，在STL中体现了泛型化程序设计的思想，引入了诸多新的名词，比如像需求（requirements），概念（concept），模型（model），容器（container），算法（algorithmn），迭代（iterator）等。与OOP（object-oriented programming）中的多态（polymorphism）一样，泛型也是一种软件的复用技术；&lt;/p&gt;
+&lt;p&gt;从实现层次看，整个STL是以一种类型参数化的方式实现的，这种方式基于一个在早先C++标准中没有出现的语言特性–模板（template）。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="C++" scheme="http://example.com/categories/C/"/>
+    
+    
+    <category term="STL" scheme="http://example.com/tags/STL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue3笔记</title>
+    <link href="http://example.com/2022/09/19/Vue3%E7%AC%94%E8%AE%B0/"/>
+    <id>http://example.com/2022/09/19/Vue3%E7%AC%94%E8%AE%B0/</id>
+    <published>2022-09-19T14:29:00.000Z</published>
+    <updated>2022-09-19T14:43:46.121Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;Vue3快速上手&lt;/h1&gt;
+&lt;img src=&quot;https://user-images.githubusercontent.com/499550/93624428-53932780-f9ae-11ea-8d16-af949e16a09f.png&quot; style=&quot;width:200px&quot;&gt;
+&lt;h2 id=&quot;1-vue3简介&quot;&gt;1.Vue3简介&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;2020年9月18日，Vue.js发布3.0版本，代号：One Piece（海贼王）&lt;/li&gt;
+&lt;li&gt;耗时2年多、&lt;a href=&quot;https://github.com/vuejs/vue-next/graphs/commit-activity&quot;&gt;2600+次提交&lt;/a&gt;、&lt;a href=&quot;https://github.com/vuejs/rfcs/tree/master/active-rfcs&quot;&gt;30+个RFC&lt;/a&gt;、&lt;a href=&quot;https://github.com/vuejs/vue-next/pulls?q=is%3Apr+is%3Amerged+-author%3Aapp%2Fdependabot-preview+&quot;&gt;600+次PR&lt;/a&gt;、&lt;a href=&quot;https://github.com/vuejs/vue-next/graphs/contributors&quot;&gt;99位贡献者&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;github上的tags地址：&lt;a href=&quot;https://github.com/vuejs/vue-next/releases/tag/v3.0.0&quot;&gt;https://github.com/vuejs/vue-next/releases/tag/v3.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="Vue3" scheme="http://example.com/tags/Vue3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>L1-018 大笨钟</title>
+    <link href="http://example.com/2022/09/19/L1-018-%E5%A4%A7%E7%AC%A8%E9%92%9F/"/>
+    <id>http://example.com/2022/09/19/L1-018-%E5%A4%A7%E7%AC%A8%E9%92%9F/</id>
+    <published>2022-09-19T02:24:00.000Z</published>
+    <updated>2022-09-19T03:50:25.039Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://pintia.cn/problem-sets/994805046380707840/problems/994805119944605696&quot;&gt;PTA-天梯赛——L1-018 大笨钟&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;微博上有个自称“大笨钟V”的家伙，每天敲钟催促码农们爱惜身体早点睡觉。不过由于笨钟自己作息也不是很规律，所以敲钟并不定时。一般敲钟的点数是根据敲钟时间而定的，如果正好在某个整点敲，那么“当”数就等于那个整点数；如果过了整点，就敲下一个整点数。另外，虽然一天有24小时，钟却是只在后半天敲1~12下。例如在23:00敲钟，就是“当当当当当当当当当当当”，而到了23:01就会是“当当当当当当当当当当当当”。在午夜00:00到中午12:00期间（端点时间包括在内），笨钟是不敲的。&lt;/p&gt;
+&lt;p&gt;下面就请你写个程序，根据当前时间替大笨钟敲钟。&lt;/p&gt;
+&lt;h6 id=&quot;输入格式：&quot;&gt;输入格式：&lt;/h6&gt;
+&lt;p&gt;输入第一行按照hh:mm的格式给出当前时间。其中hh是小时，在00到23之间；mm是分钟，在00到59之间。&lt;/p&gt;
+&lt;h6 id=&quot;输出格式：&quot;&gt;输出格式：&lt;/h6&gt;
+&lt;p&gt;根据当前时间替大笨钟敲钟，即在一行中输出相应数量个Dang。如果不是敲钟期，则输出：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Only hh:mm.  Too early to Dang.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;其中hh:mm是输入的时间。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="刷题" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+    <category term="PTA" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/PTA/"/>
+    
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
+    
+    <category term="天梯赛" scheme="http://example.com/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>L1-017 到底有多二</title>
+    <link href="http://example.com/2022/09/19/L1-017-%E5%88%B0%E5%BA%95%E6%9C%89%E5%A4%9A%E4%BA%8C/"/>
+    <id>http://example.com/2022/09/19/L1-017-%E5%88%B0%E5%BA%95%E6%9C%89%E5%A4%9A%E4%BA%8C/</id>
+    <published>2022-09-19T01:13:00.000Z</published>
+    <updated>2022-09-19T12:00:22.520Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://pintia.cn/problem-sets/994805046380707840/problems/994805121500692480&quot;&gt;PTA-天梯赛——L1-017 到底有多二&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一个整数“犯二的程度”定义为该数字中包含2的个数与其位数的比值。如果这个数是负数，则程度增加0.5倍；如果还是个偶数，则再增加1倍。例如数字-13142223336是个11位数，其中有3个2，并且是负数，也是偶数，则它的犯二程度计算为：3/11×1.5×2×100%，约为81.82%。本题就请你计算一个给定整数到底有多二。&lt;/p&gt;
+&lt;h6 id=&quot;输入格式：&quot;&gt;输入格式：&lt;/h6&gt;
+&lt;p&gt;输入第一行给出一个不超过50位的整数N。&lt;/p&gt;
+&lt;h6 id=&quot;输出格式：&quot;&gt;输出格式：&lt;/h6&gt;
+&lt;p&gt;在一行中输出N犯二的程度，保留小数点后两位。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="刷题" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+    <category term="PTA" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/PTA/"/>
+    
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
+    
+    <category term="天梯赛" scheme="http://example.com/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我写了一首诗</title>
+    <link href="http://example.com/2022/09/12/%E6%88%91%E5%86%99%E4%BA%86%E4%B8%80%E9%A6%96%E8%AF%97/"/>
+    <id>http://example.com/2022/09/12/%E6%88%91%E5%86%99%E4%BA%86%E4%B8%80%E9%A6%96%E8%AF%97/</id>
+    <published>2022-09-12T13:34:00.000Z</published>
+    <updated>2022-09-12T14:14:09.146Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;没有大结局的故事值得品味吗?&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="李季鸿的日常随笔" scheme="http://example.com/categories/%E6%9D%8E%E5%AD%A3%E9%B8%BF%E7%9A%84%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="随笔" scheme="http://example.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如果再来一次,,,,,,,,,,,,,哪有如果啊</title>
+    <link href="http://example.com/2022/09/11/%E6%97%A5%E5%B8%B8%E6%84%9F%E6%82%9F/"/>
+    <id>http://example.com/2022/09/11/%E6%97%A5%E5%B8%B8%E6%84%9F%E6%82%9F/</id>
+    <published>2022-09-11T08:21:00.000Z</published>
+    <updated>2022-09-12T13:33:32.947Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;音乐真的可以表达心情，睡不着的每个夜全靠以前的每个律动进行催眠&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果再来一次，我可能会选择不遇见你。&lt;/p&gt;
+&lt;p&gt;如果再来一次，我可能尽量不和你接触，不说话，平平淡淡的相逢可能也会比现在的结局好看。&lt;/p&gt;
+&lt;p&gt;如果再来一次，我可能变得开朗，至少不像现在那么迷茫。&lt;/p&gt;
+&lt;p&gt;如果再来一次，我可能会选择远远观赏，而不是放大缺点，人的成长总是悄无声息的，而我却失去了耐心去等待。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="李季鸿的日常随笔" scheme="http://example.com/categories/%E6%9D%8E%E5%AD%A3%E9%B8%BF%E7%9A%84%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="随笔" scheme="http://example.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深度学习之——卷积神经网络</title>
+    <link href="http://example.com/2022/09/11/%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B9%8B%E2%80%94%E2%80%94%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    <id>http://example.com/2022/09/11/%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B9%8B%E2%80%94%E2%80%94%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</id>
+    <published>2022-09-11T03:40:00.000Z</published>
+    <updated>2022-09-11T06:02:11.167Z</updated>
+    
+    
+    <summary type="html">&lt;h6 id=&quot;背景&quot;&gt;背景&lt;/h6&gt;
+&lt;img src=&quot;/images/image-20220911114410844.png&quot; alt=&quot;引申背景&quot; style=&quot;zoom:40%;&quot;&gt;
+&gt; 是否可能进─步减少训练参数数量?
+&gt; 办法:提取出图像中的关键信息(轮廓)，再建立MLP模型进行训练
+&lt;h6 id=&quot;图像卷积运算&quot;&gt;图像卷积运算&lt;/h6&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对图像矩阵与滤波器矩阵进行对应相乘再求和运算，转化得到新的矩阵,作用:&lt;strong&gt;快速定位图像中某些边缘特征&lt;/strong&gt;&lt;br&gt;
+英文: convolution  —&amp;gt; CNN&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A与B的卷积通常表示为:  A * B或convolution(A,B)&lt;br&gt;
+&lt;img src=&quot;/images/image-20220911121624085.png&quot; alt=&quot;运算规则&quot; style=&quot;zoom:33%;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;/images/image-20220911122142445.png&quot; alt=&quot;转换后&quot; style=&quot;zoom:33%;&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="人工智能" scheme="http://example.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    
+    <category term="深度学习" scheme="http://example.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PTA-天梯赛——L1-016 查验身份证</title>
+    <link href="http://example.com/2022/09/08/PTA-%E5%A4%A9%E6%A2%AF%E8%B5%9B%E2%80%94%E2%80%94L1-016-%E6%9F%A5%E9%AA%8C%E8%BA%AB%E4%BB%BD%E8%AF%81/"/>
+    <id>http://example.com/2022/09/08/PTA-%E5%A4%A9%E6%A2%AF%E8%B5%9B%E2%80%94%E2%80%94L1-016-%E6%9F%A5%E9%AA%8C%E8%BA%AB%E4%BB%BD%E8%AF%81/</id>
+    <published>2022-09-08T13:51:00.000Z</published>
+    <updated>2022-09-08T13:57:34.874Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://pintia.cn/problem-sets/994805046380707840/problems/994805122985476096&quot;&gt;PTA-天梯赛——L1-016 查验身份证&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一个合法的身份证号码由17位地区、日期编号和顺序编号加1位校验码组成。校验码的计算规则如下：&lt;/p&gt;
+&lt;p&gt;首先对前17位数字加权求和，权重分配为：{7，9，10，5，8，4，2，1，6，3，7，9，10，5，8，4，2}；然后将计算的和对11取模得到值Z；最后按照以下关系对应Z值与校验码M的值：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Z：0 1 2 3 4 5 6 7 8 9 10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;M：1 0 X 9 8 7 6 5 4 3 2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;现在给定一些身份证号码，请你验证校验码的有效性，并输出有问题的号码。&lt;/p&gt;
+&lt;h6 id=&quot;输入格式：&quot;&gt;输入格式：&lt;/h6&gt;
+&lt;p&gt;输入第一行给出正整数N（≤100）是输入的身份证号码的个数。随后N行，每行给出1个18位身份证号码。&lt;/p&gt;
+&lt;h6 id=&quot;输出格式：&quot;&gt;输出格式：&lt;/h6&gt;
+&lt;p&gt;按照输入的顺序每行输出1个有问题的身份证号码。这里并不检验前17位是否合理，只检查前17位是否全为数字且最后1位校验码计算准确。如果所有号码都正常，则输出All passed。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="刷题" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+    <category term="PTA" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/PTA/"/>
+    
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
+    
+    <category term="天梯赛" scheme="http://example.com/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>早知道暑假不留校了</title>
+    <link href="http://example.com/2022/09/08/%E6%97%A9%E7%9F%A5%E9%81%93%E6%9A%91%E5%81%87%E4%B8%8D%E7%95%99%E6%A0%A1%E4%BA%86/"/>
+    <id>http://example.com/2022/09/08/%E6%97%A9%E7%9F%A5%E9%81%93%E6%9A%91%E5%81%87%E4%B8%8D%E7%95%99%E6%A0%A1%E4%BA%86/</id>
+    <published>2022-09-08T13:51:00.000Z</published>
+    <updated>2022-09-08T16:57:12.591Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;img src=&quot;/images/ljh.png&quot; alt=&quot;早知道暑假不留校了&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="李季鸿的日常随笔" scheme="http://example.com/categories/%E6%9D%8E%E5%AD%A3%E9%B8%BF%E7%9A%84%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="随笔" scheme="http://example.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PTA-天梯赛——L1-015 跟奥巴马一起画方块</title>
+    <link href="http://example.com/2022/09/08/PTA-%E5%A4%A9%E6%A2%AF%E8%B5%9B%E2%80%94%E2%80%94L1-015-%E8%B7%9F%E5%A5%A5%E5%B7%B4%E9%A9%AC%E4%B8%80%E8%B5%B7%E7%94%BB%E6%96%B9%E5%9D%97/"/>
+    <id>http://example.com/2022/09/08/PTA-%E5%A4%A9%E6%A2%AF%E8%B5%9B%E2%80%94%E2%80%94L1-015-%E8%B7%9F%E5%A5%A5%E5%B7%B4%E9%A9%AC%E4%B8%80%E8%B5%B7%E7%94%BB%E6%96%B9%E5%9D%97/</id>
+    <published>2022-09-08T13:16:00.000Z</published>
+    <updated>2022-09-08T13:23:00.048Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://pintia.cn/problem-sets/994805046380707840/problems/994805124398956544&quot;&gt;PTA-天梯赛——L1-015 跟奥巴马一起画方块&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;美国总统奥巴马不仅呼吁所有人都学习编程，甚至以身作则编写代码，成为美国历史上首位编写计算机代码的总统。2014年底，为庆祝“计算机科学教育周”正式启动，奥巴马编写了很简单的计算机代码：在屏幕上画一个正方形。现在你也跟他一起画吧！&lt;/p&gt;
+&lt;h6 id=&quot;输入格式：&quot;&gt;输入格式：&lt;/h6&gt;
+&lt;p&gt;输入在一行中给出正方形边长N（3≤N≤21）和组成正方形边的某种字符C，间隔一个空格。&lt;/p&gt;
+&lt;h6 id=&quot;输出格式：&quot;&gt;输出格式：&lt;/h6&gt;
+&lt;p&gt;输出由给定字符C画出的正方形。但是注意到行间距比列间距大，所以为了让结果看上去更像正方形，我们输出的行数实际上是列数的50%（四舍五入取整）。&lt;/p&gt;
+&lt;h6 id=&quot;输入样例：&quot;&gt;输入样例：&lt;/h6&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;10 a&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h6 id=&quot;输出样例：&quot;&gt;输出样例：&lt;/h6&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;aaaaaaaaaa&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;aaaaaaaaaa&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;aaaaaaaaaa&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;aaaaaaaaaa&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;aaaaaaaaaa&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="刷题" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+    <category term="PTA" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/PTA/"/>
+    
+    
+    <category term="天梯赛" scheme="http://example.com/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/"/>
+    
+    <category term="java" scheme="http://example.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PTA-天梯赛——L1-013 计算阶乘和</title>
+    <link href="http://example.com/2022/09/08/PTA-%E5%A4%A9%E6%A2%AF%E8%B5%9B%E2%80%94%E2%80%94L1-013-%E8%AE%A1%E7%AE%97%E9%98%B6%E4%B9%98%E5%92%8C/"/>
+    <id>http://example.com/2022/09/08/PTA-%E5%A4%A9%E6%A2%AF%E8%B5%9B%E2%80%94%E2%80%94L1-013-%E8%AE%A1%E7%AE%97%E9%98%B6%E4%B9%98%E5%92%8C/</id>
+    <published>2022-09-08T12:28:00.000Z</published>
+    <updated>2022-09-08T12:40:32.253Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://pintia.cn/problem-sets/994805046380707840/problems/994805127389495296&quot;&gt;PTA-天梯赛——L1-013 计算阶乘和&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;对于给定的正整数N，需要你计算 S=1!+2!+3!+…+N!。&lt;/p&gt;
+&lt;h6 id=&quot;输入格式：&quot;&gt;输入格式：&lt;/h6&gt;
+&lt;p&gt;输入在一行中给出一个不超过10的正整数N。&lt;/p&gt;
+&lt;h6 id=&quot;输出格式：&quot;&gt;输出格式：&lt;/h6&gt;
+&lt;p&gt;在一行中输出S的值。&lt;/p&gt;
+&lt;h6 id=&quot;输入样例：&quot;&gt;输入样例：&lt;/h6&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h6 id=&quot;输出样例：&quot;&gt;输出样例：&lt;/h6&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="刷题" scheme="http://example.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
+    
+    <category term="天梯赛" scheme="http://example.com/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++ STL库中map的常见操作</title>
+    <link href="http://example.com/2022/09/08/C-STL%E5%BA%93%E4%B8%ADmap%E7%9A%84%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/"/>
+    <id>http://example.com/2022/09/08/C-STL%E5%BA%93%E4%B8%ADmap%E7%9A%84%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/</id>
+    <published>2022-09-08T06:42:00.000Z</published>
+    <updated>2022-09-08T08:01:41.931Z</updated>
+    
+    
+    <summary type="html">&lt;h6 id=&quot;头文件：&quot;&gt;头文件：&lt;/h6&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&amp;lt;map&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;namespace&lt;/span&gt; std;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h6 id=&quot;定义：&quot;&gt;定义：&lt;/h6&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;map&amp;lt;&lt;span class=&quot;type&quot;&gt;char&lt;/span&gt;,&lt;span class=&quot;type&quot;&gt;int&lt;/span&gt;&amp;gt;m;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//char是下面中括号中元素的数据类型（当然可以换成其他的），&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//int是等号右边的元素的数据类型。定义什么样的类型是随便的，现在听着可能有点迷，看了下面的赋值可能就懂了&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="语法" scheme="http://example.com/categories/%E8%AF%AD%E6%B3%95/"/>
+    
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
+    
+    <category term="STL" scheme="http://example.com/tags/STL/"/>
+    
+    <category term="map" scheme="http://example.com/tags/map/"/>
+    
+  </entry>
+  
+</feed>

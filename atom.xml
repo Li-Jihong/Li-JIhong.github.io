@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-01-13T13:47:04.711Z</updated>
+  <updated>2023-02-18T12:37:56.556Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>通知！</title>
+    <link href="http://example.com/2023/02/18/%E9%80%9A%E7%9F%A5%EF%BC%81/"/>
+    <id>http://example.com/2023/02/18/%E9%80%9A%E7%9F%A5%EF%BC%81/</id>
+    <published>2023-02-18T12:33:00.000Z</published>
+    <updated>2023-02-18T12:37:56.556Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这个网址更新了，因为我的github用户名改成了Li-Jihong，本网址是通过github创建的，所以之前的域名无法访问，要通过下面的域名访问：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="通知" scheme="http://example.com/categories/%E9%80%9A%E7%9F%A5/"/>
+    
+    
+    <category term="更新" scheme="http://example.com/tags/%E6%9B%B4%E6%96%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>算法代码1~2</title>
@@ -105,7 +132,7 @@
     
     <summary type="html">&lt;h1&gt;&lt;strong&gt;LeetCode刷题记录&lt;/strong&gt;&lt;/h1&gt;
 &lt;h1&gt;贪心算法&lt;/h1&gt;
-&lt;h2 id=&quot;435-无重叠区间&quot;&gt;&lt;a href=&quot;https://leetcode.cn/problems/non-overlapping-intervals/&quot;&gt;435——无重叠区间&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;435——无重叠区间&quot;&gt;&lt;a href=&quot;https://leetcode.cn/problems/non-overlapping-intervals/&quot;&gt;435——无重叠区间&lt;/a&gt;&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;2022-08-014&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -139,7 +166,7 @@
     
     
     <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;quick-start&quot;&gt;Quick Start&lt;/h2&gt;</summary>
+&lt;h2 id=&quot;Quick-Start&quot;&gt;Quick Start&lt;/h2&gt;</summary>
     
     
     
@@ -215,7 +242,7 @@
     
     <summary type="html">&lt;p&gt;今天做的是一些简单的题目，可以用弱智来形容了，但是最后一题你能想到比我更简单的做法吗？&lt;br&gt;
 C++要多看STL，多运用标准库函数，容器等等，达到熟练的水平。&lt;/p&gt;
-&lt;h5 id=&quot;pta-天梯赛-l1-019-谁先倒&quot;&gt;&lt;a href=&quot;https://pintia.cn/problem-sets/994805046380707840/problems/994805118568873984&quot;&gt;PTA-天梯赛——L1-019 谁先倒&lt;/a&gt;&lt;/h5&gt;
+&lt;h5 id=&quot;PTA-天梯赛——L1-019-谁先倒&quot;&gt;&lt;a href=&quot;https://pintia.cn/problem-sets/994805046380707840/problems/994805118568873984&quot;&gt;PTA-天梯赛——L1-019 谁先倒&lt;/a&gt;&lt;/h5&gt;
 &lt;p&gt;划拳是古老中国酒文化的一个有趣的组成部分。酒桌上两人划拳的方法为：每人口中喊出一个数字，同时用手比划出一个数字。如果谁比划出的数字正好等于两人喊出的数字之和，谁就输了，输家罚一杯酒。两人同赢或两人同输则继续下一轮，直到唯一的赢家出现。&lt;/p&gt;
 &lt;p&gt;下面给出甲、乙两人的酒量（最多能喝多少杯不倒）和划拳记录，请你判断两个人谁先倒。&lt;/p&gt;
 &lt;h6 id=&quot;输入格式：&quot;&gt;输入格式：&lt;/h6&gt;
@@ -272,7 +299,7 @@ C++要多看STL，多运用标准库函数，容器等等，达到熟练的水�
     
     <summary type="html">&lt;h1&gt;Vue3快速上手&lt;/h1&gt;
 &lt;img src=&quot;https://user-images.githubusercontent.com/499550/93624428-53932780-f9ae-11ea-8d16-af949e16a09f.png&quot; style=&quot;width:200px&quot;&gt;
-&lt;h2 id=&quot;1-vue3简介&quot;&gt;1.Vue3简介&lt;/h2&gt;
+&lt;h2 id=&quot;1-Vue3简介&quot;&gt;1.Vue3简介&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;2020年9月18日，Vue.js发布3.0版本，代号：One Piece（海贼王）&lt;/li&gt;
 &lt;li&gt;耗时2年多、&lt;a href=&quot;https://github.com/vuejs/vue-next/graphs/commit-activity&quot;&gt;2600+次提交&lt;/a&gt;、&lt;a href=&quot;https://github.com/vuejs/rfcs/tree/master/active-rfcs&quot;&gt;30+个RFC&lt;/a&gt;、&lt;a href=&quot;https://github.com/vuejs/vue-next/pulls?q=is%3Apr+is%3Amerged+-author%3Aapp%2Fdependabot-preview+&quot;&gt;600+次PR&lt;/a&gt;、&lt;a href=&quot;https://github.com/vuejs/vue-next/graphs/contributors&quot;&gt;99位贡献者&lt;/a&gt;&lt;/li&gt;
@@ -541,32 +568,6 @@ C++要多看STL，多运用标准库函数，容器等等，达到熟练的水�
     <category term="C++" scheme="http://example.com/tags/C/"/>
     
     <category term="天梯赛" scheme="http://example.com/tags/%E5%A4%A9%E6%A2%AF%E8%B5%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++ STL库中map的常见操作</title>
-    <link href="http://example.com/2022/09/08/C-STL%E5%BA%93%E4%B8%ADmap%E7%9A%84%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/"/>
-    <id>http://example.com/2022/09/08/C-STL%E5%BA%93%E4%B8%ADmap%E7%9A%84%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/</id>
-    <published>2022-09-08T06:42:00.000Z</published>
-    <updated>2022-09-08T08:01:41.931Z</updated>
-    
-    
-    <summary type="html">&lt;h6 id=&quot;头文件：&quot;&gt;头文件：&lt;/h6&gt;
-&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&amp;lt;map&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;namespace&lt;/span&gt; std;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h6 id=&quot;定义：&quot;&gt;定义：&lt;/h6&gt;
-&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;map&amp;lt;&lt;span class=&quot;type&quot;&gt;char&lt;/span&gt;,&lt;span class=&quot;type&quot;&gt;int&lt;/span&gt;&amp;gt;m;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//char是下面中括号中元素的数据类型（当然可以换成其他的），&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//int是等号右边的元素的数据类型。定义什么样的类型是随便的，现在听着可能有点迷，看了下面的赋值可能就懂了&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="语法" scheme="http://example.com/categories/%E8%AF%AD%E6%B3%95/"/>
-    
-    
-    <category term="C++" scheme="http://example.com/tags/C/"/>
-    
-    <category term="STL" scheme="http://example.com/tags/STL/"/>
-    
-    <category term="map" scheme="http://example.com/tags/map/"/>
     
   </entry>
   

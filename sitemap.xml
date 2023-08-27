@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://li-jihong.github.io/2023/08/26/%E5%A5%BD%E4%B9%85%E6%B2%A1%E6%9B%B4%E6%96%B0%E4%BA%86%EF%BC%8C%E8%B8%8F%E5%85%A5%E4%BA%86%E6%96%B0%E7%9A%84%E6%97%85%E7%A8%8B/</loc>
+    <loc>https://li-jihong.github.io/2023/08/27/%E5%A5%BD%E4%B9%85%E6%B2%A1%E6%9B%B4%E6%96%B0%E4%BA%86%EF%BC%8C%E8%B8%8F%E5%85%A5%E4%BA%86%E6%96%B0%E7%9A%84%E6%97%85%E7%A8%8B/</loc>
     
-    <lastmod>2023-08-26</lastmod>
+    <lastmod>2023-08-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -65,13 +65,6 @@
 
   
   <url>
-    <loc>https://li-jihong.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2023-08-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://li-jihong.github.io/tags/%E5%88%B7%E9%A2%98/</loc>
     <lastmod>2023-08-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -81,28 +74,7 @@
 
   
   <url>
-    <loc>https://li-jihong.github.io/categories/%E5%88%B7%E9%A2%98/</loc>
-    <lastmod>2023-08-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://li-jihong.github.io/categories/%E5%88%B7%E9%A2%98/Acwing/</loc>
-    <lastmod>2023-08-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://li-jihong.github.io/categories/%E5%88%B7%E9%A2%98/Acwing/C/</loc>
-    <lastmod>2023-08-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://li-jihong.github.io/categories/%E5%88%B7%E9%A2%98/Acwing/C/%E6%9D%8E%E5%AD%A3%E9%B8%BF%E7%9A%84%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/</loc>
+    <loc>https://li-jihong.github.io/categories/%E9%80%9A%E7%9F%A5/</loc>
     <lastmod>2023-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
